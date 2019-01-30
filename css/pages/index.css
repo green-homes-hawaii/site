@@ -40,7 +40,7 @@
 }
 
 .marketing img {
-  max-width: 140px;
+  width: 90%;
   margin-bottom: 16px;
 }
 
@@ -60,6 +60,20 @@
 
 /* Featurettes
   ------------------------- */
+
+.featurette {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .featurette:nth-of-type(odd) {
+    text-align: right;
+  }
+
+  .featurette:nth-of-type(even) {
+    text-align: left;
+  }
+}
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */

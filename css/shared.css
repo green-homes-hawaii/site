@@ -35,3 +35,13 @@
     margin-top: 8px !important;
   }
 }
+
+.featurette-divider {
+  margin: 24px !important;
+}
+
+@media (min-width: 768px) {
+  .featurette-divider {
+    margin: 5rem 0;
+  }
+}
