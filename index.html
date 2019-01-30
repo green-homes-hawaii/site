@@ -1,169 +1,373 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GREEN HOMES HAWAII</title>
-  
-  <meta charset=”utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/shared.css" />
-  <link rel="stylesheet" href="./css/pages/index.css" />
-  
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img class="logo" src="./static/logo.png">
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse link-container" id="header-links">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"><i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Buy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Rent</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services & Contact</a>
-          </li>
-        </ul>
+  <head>
+    <title>GREEN HOMES HAWAII</title>
+
+    <meta charset=”utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./static/brand/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./static/brand/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./static/brand/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./static/brand/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./static/brand/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./static/brand/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./static/brand/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./static/brand/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./static/brand/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/simplex/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/pages/index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="./static/logo.png" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarColor03"
+          aria-controls="navbarColor03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse link-container" id="header-links">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-home"></i>
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Buy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Rent</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services & Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+
+    <div class="full-width-container">
+      <div
+        id="overview-slider"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#overview-slider"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#overview-slider" data-slide-to="1"></li>
+          <li data-target="#overview-slider" data-slide-to="2"></li>
+          <li data-target="#overview-slider" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./static/slider/view.png"
+              alt="Beautiful views, location is everything."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Beautiful Views</h5>
+              <p>
+                Location is everything. Our prime real-estate options lie in
+                affordable, yet attractive locations throughout Oahu, Hawai'i.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./static/slider/interior.png" alt="Second slide" />
+            <div class="carousel-caption d-md-block">
+              <h5>Modern Furnishing</h5>
+              <p>Enjoy the comfort, space and luxury of simplicity.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./static/slider/exterior.png" alt="Second slide" />
+            <div class="carousel-caption d-md-block">
+              <h5>Striking Design</h5>
+              <p>Simple, Sleek and Satisfying</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./static/slider/tesla.png" alt="Third slide" />
+            <div class="carousel-caption d-md-block">
+              <h5>Sustainably</h5>
+              <p>
+                Engineered from the ground up with the most trusted, economic
+                and environmentally safe technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="./static/icons/buy.png" />
+            <p>
+              Donec sed odio dui. Etiam porta sem malesuada magna mollis
+              euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+              Praesent commodo cursus magna.
+            </p>
+            <p>
+              <a class="btn btn-success" href="#" role="button"
+                >View details »</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="./static/icons/rent.png" />
+            <p>
+              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+              eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
+              amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
+              mauris condimentum nibh.
+            </p>
+            <p>
+              <a class="btn btn-success" href="#" role="button"
+                >View details »</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img src="./static/icons/growth.png" />
+            <p>
+              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+              egestas eget quam. Vestibulum id ligula porta felis euismod
+              semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+              condimentum nibh, ut fermentum massa justo sit amet risus.
+            </p>
+            <p>
+              <a class="btn btn-success" href="#" role="button"
+                >View details »</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              First featurette heading.
+              <span class="text-muted">It’ll blow your mind.</span>
+            </h2>
+            <p class="lead">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+              ligula porta felis euismod semper. Praesent commodo cursus magna,
+              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+              commodo.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+              role="img"
+              aria-label="Placeholder: 500x500"
+            >
+              <title>Placeholder</title>
+              <rect fill="#eee" width="100%" height="100%"></rect>
+              <text fill="#aaa" dy=".3em" x="50%" y="50%">500x500</text>
+            </svg>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">
+              Oh yeah, it’s that good.
+              <span class="text-muted">See for yourself.</span>
+            </h2>
+            <p class="lead">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+              ligula porta felis euismod semper. Praesent commodo cursus magna,
+              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+              commodo.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+              role="img"
+              aria-label="Placeholder: 500x500"
+            >
+              <title>Placeholder</title>
+              <rect fill="#eee" width="100%" height="100%"></rect>
+              <text fill="#aaa" dy=".3em" x="50%" y="50%">500x500</text>
+            </svg>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              And lastly, this one. <span class="text-muted">Checkmate.</span>
+            </h2>
+            <p class="lead">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+              ligula porta felis euismod semper. Praesent commodo cursus magna,
+              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+              commodo.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+              width="500"
+              height="500"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+              role="img"
+              aria-label="Placeholder: 500x500"
+            >
+              <title>Placeholder</title>
+              <rect fill="#eee" width="100%" height="100%"></rect>
+              <text fill="#aaa" dy=".3em" x="50%" y="50%">500x500</text>
+            </svg>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <!-- /END THE FEATURETTES -->
+      </div>
+
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>
+          © 2019 Green Homes Hawai'i, Inc. · <a href="#">Privacy</a> ·
+          <a href="#">Terms</a> · Icons made by
+          <a href="https://www.flaticon.com/authors/itim2101" title="itim2101"
+            >itim2101</a
+          >
+          from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+          is licensed by
+          <a
+            href="http://creativecommons.org/licenses/by/3.0/"
+            title="Creative Commons BY 3.0"
+            target="_blank"
+            >CC 3.0 BY</a
+          >
+        </p>
+      </footer>
     </div>
-  </nav>
-  
-  <div class="full-width-container">
-    <div id="overview-slider" class="carousel slide carousel-fade" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#overview-slider" data-slide-to="0" class="active"></li>
-        <li data-target="#overview-slider" data-slide-to="1"></li>
-        <li data-target="#overview-slider" data-slide-to="2"></li>
-        <li data-target="#overview-slider" data-slide-to="3"></li>
-      </ol>
-      
-      <div class="carousel-inner">
-        
-        <div class="carousel-item active">
-          <img src="./static/slider/view.png" alt="Beautiful views, location is everything." />
-          <div class="carousel-caption d-md-block">
-            <h5>Beautiful Views</h5>
-            <p>Location is everything. Our prime real-estate options lie in affordable, yet attractive locations throughout Oahu, Hawai'i.</p>
-          </div>
-        </div>
-        
-        <div class="carousel-item">
-          <img src="./static/slider/interior.png" alt="Second slide" />
-          <div class="carousel-caption d-md-block">
-            <h5>Modern Furnishing</h5>
-            <p>Enjoy the comfort, space and luxury of simplicity.</p>
-          </div>
-        </div>
-        
-        <div class="carousel-item">
-          <img src="./static/slider/exterior.png" alt="Second slide" />
-          <div class="carousel-caption d-md-block">
-            <h5>Striking Design</h5>
-            <p>Simple, Sleek and Satisfying</p>
-          </div>
-        </div>
-        
-        <div class="carousel-item">
-          <img src="./static/slider/tesla.png" alt="Third slide" />
-          <div class="carousel-caption d-md-block">
-            <h5>Sustainably</h5>
-            <p>Engineered from the ground up with the most trusted, economic and environmentally safe technology.</p>
-          </div>
-        </div>
-        
-      </div>
-      
-    </div>
-    
-    <div class="container marketing">
-      
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="./static/icons/buy.png" />
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-success" href="#" role="button">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img src="./static/icons/rent.png" />
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-success" href="#" role="button">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img src="./static/icons/growth.png" />
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-success" href="#" role="button">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-      
-      
-      <!-- START THE FEATURETTES -->
-      
-      <hr class="featurette-divider">
-      
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect fill="#eee" width="100%" height="100%"></rect><text fill="#aaa" dy=".3em" x="50%" y="50%">500x500</text></svg>
-        </div>
-      </div>
-      
-      <hr class="featurette-divider">
-      
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect fill="#eee" width="100%" height="100%"></rect><text fill="#aaa" dy=".3em" x="50%" y="50%">500x500</text></svg>
-        </div>
-      </div>
-      
-      <hr class="featurette-divider">
-      
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect fill="#eee" width="100%" height="100%"></rect><text fill="#aaa" dy=".3em" x="50%" y="50%">500x500</text></svg>
-        </div>
-      </div>
-      
-      <hr class="featurette-divider">
-      
-      <!-- /END THE FEATURETTES -->
-      
-    </div>
-    
-    <footer class="container">
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p>© 2019 Green Homes Hawai'i, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a>  · Icons made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
-    </footer>
-  </div>
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  
-</body>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
