@@ -1,0 +1,25 @@
+.flex-container {
+  align-items: flex-start;
+  padding: 0;
+}
+
+.flex-container form,
+.flex-container .info-box {
+  width: 100%;
+  margin: 8px 0;
+}
+
+form .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  .flex-container form {
+    margin: 0 16px 0 0 !important;
+  }
+
+  .flex-container .info-box {
+    margin: 0 0 0 16px !important;
+  }
+}

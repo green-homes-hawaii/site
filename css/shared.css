@@ -1,12 +1,13 @@
 .navbar .logo {
   max-width: 140px;
 }
+
 .navbar ul li a {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.card-container {
+.flex-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,23 +15,23 @@
   padding: 8px;
 }
 
-.card-container .card {
+.flex-container .card {
   margin: 8px;
   width: 100%;
 }
 
 /* 001 pretty in card container for mobile view spacing */
-.card-container .card:first-of-type {
+.flex-container .card:first-of-type {
   margin-top: 0 !important;
 }
 
 @media (min-width: 768px) {
-  .card-container {
+  .flex-container {
     flex-direction: row;
   }
 
   /* revert 001 */
-  .card-container .card:first-of-type {
+  .flex-container .card:first-of-type {
     margin-top: 8px !important;
   }
 }

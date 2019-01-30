@@ -1,6 +1,6 @@
 function renderPropertyThumbnailCard(type) {
   var forSale = getProperties(type);
-  var cardContainer = document.getElementById("forSaleContainer");
+  var cardContainer = document.getElementById("card-container");
 
   forSale.map(function(property) {
     cardContainer.innerHTML +=

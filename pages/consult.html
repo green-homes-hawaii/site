@@ -75,6 +75,7 @@
       href="https://bootswatch.com/4/simplex/bootstrap.min.css"
     />
     <link rel="stylesheet" href="../css/shared.css" />
+    <link rel="stylesheet" href="../css/pages/consult.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -110,41 +111,62 @@
               <a class="nav-link" href="./rent.html">Rent</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="./consult.html"
-                >Services & Contact</a
-              >
+              <a class="nav-link" href="./consult.html">Services & Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <main role="main">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">
+            Professional & Sustainable Green Home Solutions
+          </h1>
+          <p>
+            This is a paragraph that explains the
+            <strong>amazingly superb</strong>, <strong>wowingly wowing</strong>,
+            <strong>most spectacular</strong> key reasons why someone should
+            trust you for consulting.
+          </p>
+          <hr />
+          <div class="flex-container">
+            <form>
+              <h2>Contact Green Homes Hawaii</h2>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+            <div class="info-box"><h2>About</h2></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container"><hr /></div>
+      <!-- /container -->
+    </main>
+
     <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>
-          © 2019 Green Homes Hawai'i, Inc. · <a href="#">Privacy</a> ·
-          <a href="#">Terms</a>
-      </footer>
-    </div>
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>
+        © 2019 Green Homes Hawai'i, Inc. · <a href="#">Privacy</a> ·
+        <a href="#">Terms</a>
+      </p>
+    </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="../js/models/properties.js"></script>
-    <script src="../js/views/properties.js"></script>
-    <script src="../js/views/rent.js"></script>
+    <script src="../js/views/consult.js"></script>
   </body>
 </html>
