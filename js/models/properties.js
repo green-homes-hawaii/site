@@ -15,8 +15,8 @@ function getProperties(type) {
       type: "sale",
       thumbnail: "http://placehold.it/500",
       description: "This is an example description",
-      title: "Exampe title property",
-      price: "$100,000",
+      title: "Another property",
+      price: "$500,000",
     },
   ];
 
