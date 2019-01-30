@@ -1,0 +1,3 @@
+(function startup() {
+  renderPropertyThumbnailCard("rent");
+})();
