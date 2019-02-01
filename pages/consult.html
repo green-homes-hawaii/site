@@ -121,25 +121,37 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <div class="container">
-          <h1 class="display-3">
-            Professional & Sustainable Green Home Solutions
+          <h1 class="display-4">
+            Expert Green Home Solutions
           </h1>
-          <p>
+          <h2>
             This is a paragraph that explains the
             <strong>amazingly superb</strong>, <strong>wowingly wowing</strong>,
             <strong>most spectacular</strong> key reasons why someone should
             trust you for consulting.
-          </p>
-          <hr />
+          </h2>
+
+          <hr class="white section-divider" />
+
           <div class="flex-container">
             <form>
               <h2>Contact Green Homes Hawaii</h2>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="full_name">Full Name</label>
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="full_name"
+                  aria-describedby="emailHelp"
+                  placeholder="First and Last Name Here, Please!"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
                 />
@@ -149,7 +161,9 @@
               </div>
               <button type="submit" class="btn btn-success">Submit</button>
             </form>
-            <div class="info-box"><h2>About</h2></div>
+            <div class="info-box">
+              <h2>About</h2>
+            </div>
           </div>
         </div>
       </div>

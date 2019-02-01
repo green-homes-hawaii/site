@@ -2,6 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar .active a {
+}
+
 .navbar .logo {
   max-width: 140px;
 }
@@ -9,6 +12,11 @@ html {
 .navbar ul li a {
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 120%;
+}
+
+.navbar ul li.active a {
+  color: #469408 !important;
 }
 
 .flex-container {
@@ -48,4 +56,36 @@ html {
   .featurette-divider {
     margin: 5rem 0;
   }
+}
+
+main .jumbotron .button-container {
+  margin: 24px auto;
+}
+
+main .jumbotron {
+  background-color: #469408;
+  border-top: 2px solid #377506;
+  border-radius: 0;
+  color: white;
+}
+
+main .jumbotron .text-muted {
+  color: white !important;
+}
+
+.fa-chevron-down {
+  margin-left: 6px;
+}
+
+hr.white {
+  background: white;
+}
+
+hr.section-divider {
+  margin: 36px 0;
+}
+
+.left {
+  text-align: left;
+  margin: auto 0;
 }

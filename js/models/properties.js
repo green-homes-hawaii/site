@@ -7,7 +7,7 @@ function getProperties(type) {
       type: "buy",
       thumbnail: "http://placehold.it/500",
       description: "This is an example description of a property for SALE.",
-      title: "Example property FOR SALE",
+      title: "HANALEI ST. Duplex (2 Single Family Dwelling)",
       price: "$100,000",
     },
     {
@@ -23,7 +23,7 @@ function getProperties(type) {
       type: "rent",
       thumbnail: "http://placehold.it/500",
       description: "This is an example description of a property for RENT.",
-      title: "Example property FOR RENT",
+      title: "Makaha Studio",
       price: "$100,000",
     },
     {
