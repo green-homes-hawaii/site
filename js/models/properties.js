@@ -1,12 +1,11 @@
 function getProperties(type) {
   this.type = type || null;
 
-  var properties = [
+  var forSale = [
     {
-      id: 1,
+      id: "han-duplex-sale",
       type: "buy",
-      thumbnail: "http://placehold.it/500",
-      photos: [],
+      photosPath: "/static/properties/sale/han-duplex",
       title: "HANALEI ST. Duplex (2 Single Family Dwelling)",
       description:
         "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more",
@@ -42,29 +41,13 @@ function getProperties(type) {
         },
       ],
     },
+  ];
+
+  var forRent = [
     {
-      id: 2,
-      type: "buy",
-      thumbnail: "http://placehold.it/500",
-      photos: [],
-      description: "This is an example description of a property for SALE.",
-      footnote: "",
-      title: "Example property FOR SALE",
-      price: "$500,000",
-      features: [],
-      upgrades: [
-        {
-          title: "",
-          description: "",
-          cost: "",
-        },
-      ],
-    },
-    {
-      id: 3,
+      id: "makaha-studio-rent",
       type: "rent",
-      thumbnail: "http://placehold.it/500",
-      photos: [],
+      photosPath: ".../static/properties/rent/makaha-studio",
       description: "This is an example description of a property for RENT.",
       footnote: "",
       title: "Makaha Studio",
@@ -97,26 +80,9 @@ function getProperties(type) {
         },
       ],
     },
-    {
-      id: 4,
-      type: "rent",
-      thumbnail: "http://placehold.it/500",
-      photos: [],
-      description: "This is an example description of a property for RENT.",
-      footnote:
-        "Sewer and water included in rental price, but electricity is separate",
-      title: "Example property FOR RENT",
-      price: "$500,000",
-      features: [],
-      upgrades: [
-        {
-          title: "",
-          description: "",
-          cost: "",
-        },
-      ],
-    },
   ];
+
+  var properties = forSale.concat(forRent);
 
   if (this.type) {
     return properties.filter(function(property) {

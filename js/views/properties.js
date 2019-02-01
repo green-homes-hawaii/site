@@ -5,8 +5,8 @@ function renderPropertyThumbnailCard(type) {
   forSale.map(function(property) {
     cardContainer.innerHTML +=
       "<div class='card'><img src='" +
-      property.thumbnail +
-      "' class='card-img-top' alt='" +
+      property.photosPath +
+      "/_thumb.jpg' class='card-img-top' alt='" +
       property.description +
       "' /><div class='card-body'><h5 class='card-title'>" +
       property.title +
