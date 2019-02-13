@@ -71,7 +71,9 @@
     />
     <link
       rel="stylesheet"
-      href="https://bootswatch.com/4/simplex/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+      integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/shared.css" />
     <link rel="stylesheet" href="../css/pages/consult.css" />
@@ -99,8 +101,7 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="../index.html"
-                ><i class="fas fa-home"></i>
-                <span class="sr-only">(current)</span></a
+                >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
@@ -118,53 +119,69 @@
     </nav>
 
     <main role="main">
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-4">
-            Expert Green Home Solutions
-          </h1>
-          <h2>
-            This is a paragraph that explains the
-            <strong>amazingly superb</strong>, <strong>wowingly wowing</strong>,
-            <strong>most spectacular</strong> key reasons why someone should
-            trust you for consulting.
-          </h2>
+      <section class="jumbotron text-center">
+        <div class="container inner-small">
+          <h1 class="jumbotron-heading">Professional, Sustainable Solutions</h1>
+          <p class="lead text-muted">
+            Something short and leading about the collection below—its contents,
+            the creator, etc. Make it short and sweet, but not too short so
+            folks don’t simply skip over it entirely.
+          </p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Get In Touch!</a>
+            <a href="#" class="btn btn-secondary my-2">Call Today</a>
+          </p>
+        </div>
+      </section>
 
-          <hr class="white section-divider" />
-
-          <div class="flex-container">
-            <form>
-              <h2>Contact Green Homes Hawaii</h2>
-              <div class="form-group">
-                <label for="full_name">Full Name</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="full_name"
-                  aria-describedby="emailHelp"
-                  placeholder="First and Last Name Here, Please!"
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                />
-                <small id="emailHelp" class="form-text text-muted"
-                  >We'll never share your email with anyone else.</small
-                >
-              </div>
-              <button type="submit" class="btn btn-success">Submit</button>
-            </form>
-            <div class="info-box">
-              <h2>About</h2>
-            </div>
+      <div class="container flex-container">
+        <form>
+          <h2>Contact Green Homes Hawaii</h2>
+          <div class="form-group">
+            <label for="full_name">Name</label>
+            <input
+              type="email"
+              class="form-control"
+              id="full_name"
+              aria-describedby="emailHelp"
+            />
           </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Subject</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>New Homes For Sale</option>
+              <option>Rental Properties</option>
+              <option>Existing Communities</option>
+              <option>Green Home Technology</option>
+              <option>Development Services</option>
+              <option>Real Estate Agent Services</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Details</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Let us know how we can help you!"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <div class="info-box">
+          <h2>About</h2>
         </div>
       </div>
 
