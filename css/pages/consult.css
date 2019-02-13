@@ -5,7 +5,7 @@
 
 .flex-container form,
 .flex-container .info-box {
-  width: 100%;
+  width: 50%;
   margin: 8px 0;
 }
 
@@ -20,6 +20,10 @@ form label {
 
 h2 {
   margin-bottom: 18px;
+}
+
+.flex-container .info-box img {
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
