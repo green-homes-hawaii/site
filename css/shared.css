@@ -2,14 +2,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar {
+  padding-top: 16px;
+}
+
 .navbar .logo {
   max-width: 140px;
 }
 
 .navbar ul li a {
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 120%;
+  color: black;
+  font-weight: 500;
 }
 
 .navbar ul li.active a {
@@ -89,4 +93,8 @@ hr.section-divider {
 .left {
   text-align: left;
   margin: auto 0;
+}
+
+.btn-success {
+  color: white !important;
 }
