@@ -34,13 +34,8 @@ html {
 }
 
 .flex-container .card {
-  margin: 8px;
   width: 100%;
-}
-
-/* 001 pretty in card container for mobile view spacing */
-.flex-container .card:first-of-type {
-  margin-top: 0 !important;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 768px) {
@@ -48,24 +43,9 @@ html {
     flex-direction: row;
   }
 
-  /* revert 001 */
-  .flex-container .card:first-of-type {
-    margin-top: 8px !important;
+  .flex-container .card {
+    margin: 8px;
   }
-}
-
-.featurette-divider {
-  margin: 24px !important;
-}
-
-@media (min-width: 768px) {
-  .featurette-divider {
-    margin: 5rem 0;
-  }
-}
-
-main .jumbotron .button-container {
-  margin: 24px auto;
 }
 
 main .jumbotron {
@@ -101,7 +81,7 @@ hr.section-divider {
 }
 
 .inner-small {
-  width: 768px;
+  max-width: 768px;
 }
 
 main .mini-info {
@@ -114,4 +94,13 @@ main .mini-info {
 main .mini-info a {
   color: white;
   font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container .btn {
+  margin-top: 8px;
 }
