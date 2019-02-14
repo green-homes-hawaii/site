@@ -14,3 +14,13 @@ function toggleModal(modal) {
     body.classList.add("noScroll");
   }
 }
+
+function getProjectRoot() {
+  // customized to Austin Witherow dev env
+  console.log(window.location);
+  if (window.location.href.includes("file://")) {
+    return "file:///Users/austinwitherow/dev/clients/green-homes-hawaii/site";
+  } else {
+    return "https://green-homes-hawaii.github.io/site";
+  }
+}

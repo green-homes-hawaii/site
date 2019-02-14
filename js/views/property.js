@@ -21,22 +21,48 @@ function renderPropertyThumbnailCard(type) {
 }
 
 function showPropertyModal(id) {
-  var modal = document.getElementById("modal");
-  toggleModal(modal);
+  var m = document.getElementById("modal");
+  m.classList.add("property");
+  toggleModal(m);
 
-  var property = getProperty(id);
+  var p = getProperty(id);
+  var c = "";
 
-  if (!property) {
-    modal.innerHTML =
+  if (!p) {
+    m.innerHTML =
       "<div class='alert alert-info' role='alert'>This property does not exist...</div>";
   }
 
-  console.log(property);
+  console.log(p);
 
-  modal.innerHTML +=
-    "<div class='modal-title'><button onclick='toggleModal()'><i class='fas fa-times'></i></button>" +
-    property.title +
-    "</div>";
+  c +=
+    "<div class='inner-small'><button id='close-btn' onclick='toggleModal()'><i class='fas fa-times'></i></button>";
 
-  modal.innerHTML += "<div class='modal-content'>Hello</div>";
+  c += "<img class='main-img' src='" + decodeURI(p.thumbnail) + "'/>";
+  c += "<div class='modal-body'>";
+
+  c += "<h1 class='hook'>" + p.title + "</h1>";
+  c += "<h2 class='line'>" + p.description + "</h2>";
+  c += "<h3>Features</h3>";
+  c += "<ul>";
+  p.features.map(function(feature) {
+    c += "<li>" + feature + "</li>";
+  });
+  c += "</ul>";
+  c += "<p class='small'>* " + p.footnote + "</p>";
+  c += "<div class='button-container'>";
+
+  c +=
+    "<a href='mailto:greenhomes808@gmail.com?subject=" +
+    p.title +
+    "' class='btn btn-primary'>Request Info</a>";
+  c += "<a href='tel:+6494461709' class='btn btn-secondary'>Call Today!</a>";
+  c +=
+    "<a href='https://5182576364.mortgage-application.net/WebApp/Start.aspx' target='_blank' class='btn btn-info'>Loans</a>";
+
+  c += "</div>"; // end button container
+  c += "</div>"; // close modal body
+  c += "</div>"; // close inner-small
+
+  m.innerHTML = c;
 }

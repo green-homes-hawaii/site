@@ -1,11 +1,13 @@
 function getProperties(type) {
   this.type = type || null;
 
+  var root = getProjectRoot();
+
   var properties = [
     {
       id: 1,
       type: "buy",
-      thumbnail: "http://placehold.it/500",
+      thumbnail: root + "/static/properties/solar.jpg",
       photos: [],
       title: "HANALEI ST. Duplex (2 Single Family Dwelling)",
       description:
@@ -45,7 +47,7 @@ function getProperties(type) {
     {
       id: 2,
       type: "buy",
-      thumbnail: "http://placehold.it/500",
+      thumbnail: root + "/static/properties/ocean.jpg",
       photos: [],
       description: "This is an example description of a property for SALE.",
       footnote: "",
@@ -63,7 +65,7 @@ function getProperties(type) {
     {
       id: 3,
       type: "rent",
-      thumbnail: "http://placehold.it/500",
+      thumbnail: root + "/static/properties/tesla.jpg",
       photos: [],
       description: "This is an example description of a property for RENT.",
       footnote: "",
@@ -100,7 +102,7 @@ function getProperties(type) {
     {
       id: 4,
       type: "rent",
-      thumbnail: "http://placehold.it/500",
+      thumbnail: root + "/static/properties/green.jpg",
       photos: [],
       description: "This is an example description of a property for RENT.",
       footnote:

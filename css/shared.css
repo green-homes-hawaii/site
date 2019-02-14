@@ -115,24 +115,79 @@ footer {
   margin-top: 8px;
 }
 
+@media (min-width: 768px) {
+  .button-container .btn {
+    margin-top: 0;
+    margin-right: 8px;
+  }
+}
+
 #modal {
   display: none;
   z-index: 9;
+  position: relative;
 }
 
 #modal.shown {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   display: block;
-  background: #5ecc62;
+  background: rgba(255, 255, 255, 0.9);
+  height: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+}
 
+#modal .inner-small {
+  padding: 8px;
+  background: #5ecc62;
+  height: 100%;
   overflow-y: scroll;
+
+  position: relative;
+}
+
+#modal #close-btn {
+  position: absolute;
+  background: none;
+  right: 0;
+  border: none;
+  font-size: 200%;
+  padding: 16px 24px;
+  color: white;
+  font-weight: 100;
+}
+
+#modal .main-img {
+  width: 100%;
+}
+
+#modal .modal-body {
+  color: white;
+}
+
+.hook,
+#modal .modal-body h3 {
+  font-weight: 300 !important;
+}
+
+.hook {
+  line-height: 2.5rem;
+}
+
+.line {
+  font-size: 90%;
+}
+
+#modal . @media (min-width: 1600px) {
+  #modal.shown {
+    left: 20%;
+    right: 20%;
+  }
 }
