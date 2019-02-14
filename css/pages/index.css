@@ -9,7 +9,7 @@
 
 .container-fluid .flex-item {
   width: 100%;
-  padding: 16px;
+  padding: 8px;
   margin: 4px;
   min-height: 36vh;
 
@@ -40,24 +40,24 @@
 }
 
 .home-bg-one {
-  background: url("https://via.placeholder.com/1600") no-repeat center center
-    fixed;
+  background: url("../../static//properties/solar.jpg");
 }
+
 .home-bg-two {
-  background: url("https://via.placeholder.com/1600") no-repeat center center
-    fixed;
+  background: url("../../static//properties/ocean.jpg");
 }
+
 .home-bg-three {
-  background: url("https://via.placeholder.com/1600") no-repeat center center
-    fixed;
+  background: url("../../static//properties/tesla.jpg");
 }
+
 .home-bg-four {
-  background: url("https://via.placeholder.com/1600") no-repeat center center
-    fixed;
+  background: url("../../static//properties/green.jpg");
 }
 
 .inner {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.66);
+  border-radius: 2px;
   color: black;
   padding: 8px 16px;
 }
