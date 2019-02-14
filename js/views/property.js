@@ -33,8 +33,6 @@ function showPropertyModal(id) {
       "<div class='alert alert-info' role='alert'>This property does not exist...</div>";
   }
 
-  console.log(p);
-
   c +=
     "<div class='inner-small'><button id='close-btn' onclick='toggleModal()'><i class='fas fa-times'></i></button>";
 
