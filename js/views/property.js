@@ -43,6 +43,7 @@ function showPropertyModal(id) {
 
   c += "<h1 class='hook'>" + p.title + "</h1>";
   c += "<h2 class='line'>" + p.description + "</h2>";
+  c += "<h2 class='line'>Price: " + p.price + "</h2>";
   c += "<h3>Features</h3>";
   c += "<ul>";
   p.features.map(function(feature) {
@@ -53,9 +54,9 @@ function showPropertyModal(id) {
   c += "<div class='button-container'>";
 
   c +=
-    "<a href='mailto:greenhomes808@gmail.com?subject=" +
+    "<a target='_blank' href='mailto:greenhomes808@gmail.com?subject=" +
     p.title +
-    "' class='btn btn-primary'>Request Info</a>";
+    " Tour' class='btn btn-primary'>Schedule Tour</a>";
   c += "<a href='tel:+6494461709' class='btn btn-secondary'>Call Today!</a>";
   c +=
     "<a href='https://5182576364.mortgage-application.net/WebApp/Start.aspx' target='_blank' class='btn btn-info'>Loans</a>";
