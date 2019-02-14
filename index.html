@@ -78,9 +78,12 @@
     />
     <link rel="stylesheet" href="./css/shared.css" />
     <link rel="stylesheet" href="./css/pages/index.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
   </head>
 
   <body>
+    <div id="modal"></div>
+
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -127,28 +130,40 @@
         <div class="inner">
           <h2 class="hook">Solar Powered Homes</h2>
           <p class="line">Only 2 energy efficient homes remaining!</p>
-          <a class="btn btn-success">Explore Today!</a>
+          <button onclick="showPropertyModal(1)" class="btn btn-success">
+            Explore Today!
+          </button>
         </div>
       </div>
       <div class="flex-item full-screen-bg home-bg-two">
         <div class="inner">
           <h2 class="hook">Ocean Front Homes</h2>
           <p class="line">Live your dream life!</p>
-          <a class="btn btn-success">Explore Today!</a>
+          <button onclick="showPropertyModal(2)" class="btn btn-success">
+            Explore Today!
+          </button>
         </div>
       </div>
       <div class="flex-item full-screen-bg home-bg-three">
         <div class="inner">
           <h2 class="hook">Green Homes Living</h2>
           <p class="line">SOLD OUT!</p>
-          <button class="btn btn-success" disabled>Explore Today!!</button>
+          <button
+            onclick="showPropertyModal(3)"
+            class="btn btn-success"
+            disabled
+          >
+            Explore Today!!
+          </button>
         </div>
       </div>
       <div class="flex-item full-screen-bg home-bg-four">
         <div class="inner">
           <h2 class="hook">Communities of the Future</h2>
           <p class="line">COMING SOON!</p>
-          <a class="btn btn-success">Explore Today!</a>
+          <button onclick="showPropertyModal(4)" class="btn btn-success">
+            Explore Today!
+          </button>
         </div>
       </div>
     </div>
@@ -161,6 +176,10 @@
         <a href="#">Back to top</a>
       </footer>
     </div>
+
+    <script src="./js/models/properties.js"></script>
+    <script src="./js/views/_shared.js"></script>
+    <script src="./js/views/property.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

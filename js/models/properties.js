@@ -124,3 +124,10 @@ function getProperties(type) {
     });
   } else return properties;
 }
+
+function getProperty(id) {
+  var properties = getProperties();
+  return properties.filter(function(property) {
+    return property.id === id;
+  })[0];
+}

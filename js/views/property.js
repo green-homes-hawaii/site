@@ -20,26 +20,18 @@ function renderPropertyThumbnailCard(type) {
   });
 }
 
-function toggleModal(modal) {
-  var m = modal || document.getElementById("modal");
-
-  m.innerHTML = "";
-
-  if (m.classList.contains("shown")) {
-    m.classList.remove("shown");
-  } else {
-    m.classList.add("shown");
-  }
-}
-
-function showPropertyModal(property) {
+function showPropertyModal(id) {
   var modal = document.getElementById("modal");
   toggleModal(modal);
+
+  var property = getProperty(id);
 
   if (!property) {
     modal.innerHTML =
       "<div class='alert alert-info' role='alert'>This property does not exist...</div>";
   }
+
+  console.log(property);
 
   modal.innerHTML +=
     "<div class='modal-title'><button onclick='toggleModal()'><i class='fas fa-times'></i></button>" +

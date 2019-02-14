@@ -1,5 +1,15 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body.noScroll {
+  overflow: hidden;
 }
 
 .navbar {
@@ -49,7 +59,7 @@ html {
 }
 
 main .jumbotron {
-  background-color: #469408;
+  background-color: ´´´;
   border-top: 2px solid #377506;
   border-radius: 0;
   color: white;
@@ -103,4 +113,26 @@ footer {
 
 .button-container .btn {
   margin-top: 8px;
+}
+
+#modal {
+  display: none;
+  z-index: 9;
+}
+
+#modal.shown {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background: #5ecc62;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  overflow-y: scroll;
 }
