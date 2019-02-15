@@ -48,7 +48,7 @@ function showPropertyModal(id) {
     c += "<li>" + feature + "</li>";
   });
   c += "</ul>";
-  c += "<p class='small'>* " + p.footnote + "</p>";
+  c += p.footnote ? "<p class='small'>* " + p.footnote + "</p>" : "";
   c += "<div class='button-container'>";
 
   c +=
@@ -57,7 +57,7 @@ function showPropertyModal(id) {
     " Tour' class='btn btn-primary'>Schedule Tour</a>";
   c += "<a href='tel:+6494461709' class='btn btn-secondary'>Call Today!</a>";
   c +=
-    "<a href='https://5182576364.mortgage-application.net/WebApp/Start.aspx' target='_blank' class='btn btn-info'>Loans</a>";
+    "<a href='https://5182576364.mortgage-application.net/WebApp/Start.aspx' target='_blank' class='btn btn-info'>Lendor Application</a>";
 
   c += "</div>"; // end button container
   c += "</div>"; // close modal body

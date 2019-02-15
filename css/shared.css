@@ -51,10 +51,12 @@ body.noScroll {
 @media (min-width: 768px) {
   .flex-container {
     flex-direction: row;
+    justify-content: flex-start;
   }
 
   .flex-container .card {
     margin: 8px;
+    width: 350px;
   }
 }
 
@@ -112,14 +114,7 @@ footer {
 }
 
 .button-container .btn {
-  margin-top: 8px;
-}
-
-@media (min-width: 768px) {
-  .button-container .btn {
-    margin-top: 0;
-    margin-right: 8px;
-  }
+  margin: 4px;
 }
 
 #modal {
@@ -135,7 +130,7 @@ footer {
   left: 0;
   right: 0;
   display: block;
-  background: #5ecc62;
+  background: RGBA(94, 204, 98, 0.9);
   height: 100%;
 
   display: flex;
@@ -157,7 +152,7 @@ footer {
   background: none;
   right: 0;
   border: none;
-  font-size: 200%;
+  font-size: 250%;
   padding: 16px 24px;
   color: white;
   font-weight: 100;
@@ -169,6 +164,7 @@ footer {
 
 #modal .modal-body {
   color: white;
+  background: #5ecc62;
 }
 
 .hook,
