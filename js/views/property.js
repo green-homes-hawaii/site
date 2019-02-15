@@ -13,7 +13,7 @@ function renderPropertyThumbnailCard(type) {
       "</h5><p class='card-text'>" +
       property.description +
       "</p><button onclick='showPropertyModal(" +
-      property +
+      property.id +
       ")' class='btn btn-success'>Schedule a Touring!</button></div><div class='card-footer text-muted'>" +
       property.price +
       "</div></div>";
