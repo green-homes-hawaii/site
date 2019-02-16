@@ -178,14 +178,9 @@ footer {
 
 .line {
   font-size: 90%;
-  margin-bottom: 4px;
 }
 
-.badge {
-  margin-bottom: 8px;
-}
-
-#modal . @media (min-width: 1600px) {
+@media (min-width: 1600px) {
   #modal.shown {
     left: 20%;
     right: 20%;

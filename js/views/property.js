@@ -2,20 +2,31 @@ function renderPropertyThumbnailCard(type) {
   var forSale = getProperties(type);
   var cardContainer = document.getElementById("card-container");
 
-  forSale.map(function(property) {
+  forSale.map(function(p) {
+    var pricetag = p.type === "rent" ? "Rent for " : "Starting at ";
+
+    var link = p.link
+      ? "<a class='btn btn-success' href='" +
+        p.link +
+        "' target='_blank'>View Property Listing</a>"
+      : "<button onclick='showPropertyModal(" +
+        p.id +
+        ")' class='btn btn-success'>View Property Listing</button>";
+
+    pricetag += p.price;
     cardContainer.innerHTML +=
       "<div class='card shadow-sm'><img src='" +
-      property.thumbnail +
+      p.thumbnail +
       "' class='card-img-top' alt='" +
-      property.description +
+      p.description +
       "' /><div class='card-body'><h5 class='card-title'>" +
-      property.title +
+      p.title +
       "</h5><p class='card-text'>" +
-      property.description +
-      "</p><button onclick='showPropertyModal(" +
-      property.id +
-      ")' class='btn btn-success'>Schedule a Touring!</button></div><div class='card-footer text-muted'>" +
-      property.price +
+      p.description +
+      "</p>" +
+      link +
+      "</div><div class='card-footer text-muted'>" +
+      pricetag +
       "</div></div>";
   });
 }
@@ -37,31 +48,50 @@ function showPropertyModal(id) {
     "<div class='inner-small'><button id='close-btn' onclick='toggleModal()'><i class='fas fa-times'></i></button>";
 
   c += "<img class='main-img' src='" + decodeURI(p.thumbnail) + "'/>";
-  c += "<div class='modal-body'>";
 
-  c += "<h1 class='hook'>" + p.title + "</h1>";
-  c += "<h2 class='line'>" + p.description + "</h2>";
-  c += "<h2 class='line'>Price: " + p.price + "</h2>";
-  c += "<h3>Features</h3>";
-  c += "<ul>";
-  p.features.map(function(feature) {
-    c += "<li>" + feature + "</li>";
-  });
-  c += "</ul>";
-  c += p.footnote ? "<p class='small'>* " + p.footnote + "</p>" : "";
-  c += "<div class='button-container'>";
+  if (!p.available) {
+    c += "<div class='modal-body'><h1 class='hook'>Coming Soon!</h1></div>";
+  } else {
+    c += "<div class='modal-body'>";
 
-  c +=
-    "<a target='_blank' href='mailto:greenhomes808@gmail.com?subject=" +
-    p.title +
-    " Tour' class='btn btn-primary'>Schedule Tour</a>";
-  c += "<a href='tel:+6494461709' class='btn btn-secondary'>Call Today!</a>";
-  c +=
-    "<a href='https://5182576364.mortgage-application.net/WebApp/Start.aspx' target='_blank' class='btn btn-info'>Lendor Application</a>";
+    c += "<h1 class='hook'>" + p.title + "</h1>";
+    c += "<h2 class='line'>" + p.description + "</h2>";
+    c += "<h2 class='line'>Price: " + p.price + "</h2>";
+    c += "<div class='flex-box'>";
+    c += "<div class='feature-contaier'>";
+    c += "<h3>Features</h3>";
+    c += "<ul>";
+    p.features.map(function(feature) {
+      c += "<li>" + feature + "</li>";
+    });
+    c += "</ul>";
+    c += "</div>"; // close FEATURE CONTAINER
+    c += "<div class='upgrades-contaier'>";
+    if (p.upgrades) {
+      c += "<h3>Upgrades</h3>";
+      c += "<ul>";
+      p.upgrades.map(function(feature) {
+        c += "<li>" + feature + "</li>";
+      });
+      c += "</ul>";
+      c += "</div>"; // close UPGRADES CONTAINER
+    }
+    c += "</div>"; // close features & upgrades
+    c += p.footnote ? "<p class='small'>* " + p.footnote + "</p>" : "";
+    c += "<div class='button-container'>";
 
-  c += "</div>"; // end button container
-  c += "</div>"; // close modal body
-  c += "</div>"; // close inner-small
+    c +=
+      "<a target='_blank' href='mailto:greenhomes808@gmail.com?subject=" +
+      p.title +
+      " Tour' class='btn btn-primary'>Schedule Tour</a>";
+    c += "<a href='tel:+18085515302' class='btn btn-secondary'>Call Today!</a>";
+    c +=
+      "<a href='https://5182576364.mortgage-application.net/WebApp/Start.aspx' target='_blank' class='btn btn-info'>Lendor Application</a>";
+
+    c += "</div>"; // end button container
+    c += "</div>"; // close modal body
+    c += "</div>"; // close inner-small
+  }
 
   m.innerHTML = c;
 }

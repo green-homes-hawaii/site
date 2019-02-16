@@ -7,6 +7,7 @@ function getProperties(type) {
     {
       id: 1,
       type: "buy",
+      available: false,
       thumbnail: root + "/static/properties/solar.jpg",
       photos: [],
       title: "HANALEI ST. Duplex (2 Single Family Dwellings)",
@@ -26,15 +27,17 @@ function getProperties(type) {
       ],
       upgrades: [
         {
-          title: "Tesla Package"
+          title: "Tesla Package",
           price: "$50,000",
-          includes: "Includes 2 Tesla Power walls and photovoltic roofing panels."
-        }
-      ]
+          includes:
+            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
+        },
+      ],
     },
     {
       id: 2,
       type: "buy",
+      available: false,
       thumbnail: root + "/static/properties/ocean.jpg",
       photos: [],
       title: "Oceanfront Homes",
@@ -50,10 +53,19 @@ function getProperties(type) {
         "Large back yard",
         "30 second walk from beach",
       ],
+      upgrades: [
+        {
+          title: "Tesla Package",
+          price: "$50,000",
+          includes:
+            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
+        },
+      ],
     },
     {
       id: 3,
       type: "buy",
+      available: false,
       thumbnail: root + "/static/properties/tesla.jpg",
       photos: [],
       title: "Green Homes at Laulaulei",
@@ -82,10 +94,19 @@ function getProperties(type) {
         "rolling coffee table",
         "Sewer and water included",
       ],
+      upgrades: [
+        {
+          title: "Tesla Package",
+          price: "$50,000",
+          includes:
+            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
+        },
+      ],
     },
     {
       id: 4,
       type: "buy",
+      available: true,
       thumbnail: root + "/static/properties/green.jpg",
       title: "Communities of the Future",
       description:
@@ -102,16 +123,27 @@ function getProperties(type) {
         "gated community",
         "10 minutes from beach",
       ],
+      upgrades: [
+        {
+          title: "Tesla Package",
+          price: "$50,000",
+          includes:
+            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
+        },
+      ],
     },
     {
       id: 5,
       type: "rent",
-      thumbnail: root + "/static/properties/green.jpg",
+      available: true,
+      thumbnail: root + "/static/properties/ocean.jpg",
+      link:
+        "https://honolulu.craigslist.org/oah/apa/d/waianae-pokai-bay-ocean-view-duplex-home/6820408261.html",
       photos: [],
-      title: "Catchy Title about this Hawt Rental",
+      title: "Brand New Ocean Front Duplex Home",
       description:
-        "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more",
-      price: "$100,000",
+        "BRAND NEW Custom Home, Ground Floor of Duplex , Separate Entrance, Directly on the Beach Park, Easy Access for Kayak, SUP, Swim, Snorkel, Fish, Surf, Split Air Conditioning, Solar Powered House, Spacious Kitchen, Commercial Sink, Brand New Appliances, Large Refrigerator, Custom Tile Shower, Custom Granite Counters, Lifeproof/Waterproof Laminate Floors, Swim with dolphins in the bay daily :), Live your dream life!!!",
+      price: "$2,400/mo",
       location: "Makaha",
       footnote:
         "Sewer and water included in rental price, but electricity is separate",
@@ -134,6 +166,59 @@ function getProperties(type) {
         "Surfboard racks",
         "rolling coffee table",
         "Sewer and water included",
+      ],
+      upgrades: [
+        {
+          title: "Tesla Package",
+          price: "$50,000",
+          includes:
+            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
+        },
+      ],
+    },
+    ,
+    {
+      id: 6,
+      type: "rent",
+      available: true,
+      thumbnail: root + "/static/properties/solar.jpg",
+      link:
+        "https://honolulu.craigslist.org/oah/apa/d/waianae-brand-new-ocean-front-duplex/6816475203.html",
+      photos: [],
+      title: "Pokai Bay Ocean View Duplex Home",
+      description:
+        "Ocean Front on Pokai Bay, Luxury, Direct Ocean Views, Great views of the Ocean AND Mountains, AIR CONDITIONING, Master Suite with 2 Walk-In Closets, Vaulted Ceilings, Covered Parking, Spacious Kitchen, Lanai (Balcony) off Living Room/Kitchen , Lanai (Balcony) off Master Bedroom, Swimming - Snorkeling, Kayaking - Surfing",
+      price: "$2,300/mo",
+      location: "Makaha",
+      footnote:
+        "Sewer and water included in rental price, but electricity is separate",
+      features: [
+        "Custom Studio + 2 Car Garage with A/C",
+        "Only steps from the beach",
+        "The garage is set up as a living room, for a total of 700 sqft of living area",
+        "Soundproof studio and garage",
+        "Split A/C in studio and garage",
+        "Club quality speaker system in garage and studio",
+        "Keypad entry to garage and studio",
+        "Full-size appliances",
+        "Custom bathroom including shower, sink, vanity, and tile",
+        "Dual flush toilet",
+        "LED lighting",
+        "Built-in cabinets and Murphy bed",
+        "Black out shades and privacy glass frosting",
+        "Electric vehicle charger outlet",
+        "Washer and Dryer on site",
+        "Surfboard racks",
+        "rolling coffee table",
+        "Sewer and water included",
+      ],
+      upgrades: [
+        {
+          title: "Tesla Package",
+          price: "$50,000",
+          includes:
+            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
+        },
       ],
     },
   ];
