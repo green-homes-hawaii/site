@@ -9,21 +9,28 @@ function getProperties(type) {
       type: "buy",
       thumbnail: root + "/static/properties/solar.jpg",
       photos: [],
-      title: "HANALEI ST. Duplex (2 Single Family Dwelling)",
+      title: "HANALEI ST. Duplex (2 Single Family Dwellings)",
       description:
         "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more",
       price: "Starting at $599,950",
       location: "Hanalei Street",
       footnote:
-        "Pictures are representative of floor plan and finishes but not of the exact house. Available to show 7 days a week last week of February.",
+        "Pictures are representative of floor plan and finishes but not of the exact house. Available to show 7 days a week.",
       features: [
         "4 bedroom",
         "3 bathroom",
         "Open floor plan",
         "large side yard",
         "gated community",
-        "10 minutes from beach",
+        "10 minute walk from beach",
       ],
+      upgrades: [
+        {
+          title: "Tesla Package"
+          price: "$50,000",
+          includes: "Includes 2 Tesla Power walls and photovoltic roofing panels."
+        }
+      ]
     },
     {
       id: 2,
@@ -33,16 +40,15 @@ function getProperties(type) {
       title: "Oceanfront Homes",
       description:
         "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more",
-      price: "$500,000",
+      price: "$1,5m",
       location: "Pokai Bay",
       footnote: "",
       features: [
-        "4 bedroom",
-        "3 bathroom",
+        "5 bedrooms",
+        "3.5 bathroom",
         "Open floor plan",
-        "large side yard",
-        "gated community",
-        "10 minutes from beach",
+        "Large back yard",
+        "30 second walk from beach",
       ],
     },
     {
