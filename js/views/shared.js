@@ -13,8 +13,10 @@ function isMobileDevice() {
   );
 }
 
-function handlePhoneLinkClick() {
+function handlePhoneLinkClick(e) {
+  // TODO: e.preventDefault()  // correct??
   if (isMobileDevice()) {
+    // TODO: return e.target.dispactEvent(e); // correct??
     return;
   } else {
     window.alert("Phone Number for Green Homes Hawaii: (808) 551 5302");
