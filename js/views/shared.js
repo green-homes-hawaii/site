@@ -1,3 +1,11 @@
+window.onbeforeunload(function() {
+  var modal = document.getElementById("modal");
+  if (m.classList.contains("shown")) {
+    toggleModal();
+    // TODO: prevent backwards movement in browser history in this case.
+  }
+});
+
 function toggleModal(modal) {
   var m = modal || document.getElementById("modal");
   var body = document.getElementsByTagName("body")[0];
