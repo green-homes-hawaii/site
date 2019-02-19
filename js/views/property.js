@@ -84,7 +84,8 @@ function showPropertyModal(id) {
       "<a target='_blank' href='mailto:greenhomes808@gmail.com?subject=" +
       p.title +
       " Tour' class='btn btn-primary'>Schedule Tour</a>";
-    c += "<a href='tel:+18085515302' class='btn btn-secondary'>Call Today!</a>";
+    c +=
+      "<a href='tel:+18085515302' class='btn btn-secondary phone-action'>Call Today!</a>";
     c +=
       "<a href='https://5182576364.mortgage-application.net/WebApp/Start.aspx' target='_blank' class='btn btn-info'>Lendor Application</a>";
 
