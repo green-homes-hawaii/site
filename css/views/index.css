@@ -30,33 +30,47 @@
 
   .container-fluid .flex-item {
     width: 48%;
+    max-height: 250px;
 
     align-items: flex-end;
     justify-content: flex-start;
   }
 }
 
-.full-screen-bg  {
+.home-bg-one {
+  background: url("../../static//properties/solar.jpg");
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.home-bg-one {
-  background: url("../../static//properties/solar.jpg");
-}
-
 .home-bg-two {
   background: url("../../static//properties/ocean.jpg");
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .home-bg-three {
   background: url("../../static//properties/tesla.jpg");
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .home-bg-four {
   background: url("../../static//properties/green.jpg");
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .inner {
