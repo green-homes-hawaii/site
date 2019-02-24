@@ -37,8 +37,8 @@
   }
 }
 
-.home-bg-one {
-  background: url("../../static//properties/solar.jpg");
+.green-bg {
+  background: url("../../static/properties/green.jpg");
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -46,8 +46,8 @@
   background-size: cover;
 }
 
-.home-bg-two {
-  background: url("../../static//properties/ocean.jpg");
+.ocean-bg {
+  background: url("../../static/properties/ocean.jpg");
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -55,8 +55,8 @@
   background-size: cover;
 }
 
-.home-bg-three {
-  background: url("../../static//properties/tesla.jpg");
+.solar-bg {
+  background: url("../../static/properties/solar.jpg");
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -64,8 +64,8 @@
   background-size: cover;
 }
 
-.home-bg-four {
-  background: url("../../static//properties/green.jpg");
+.community-bg {
+  background: url("../../static/properties/community.jpg");
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
