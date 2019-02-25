@@ -7,13 +7,13 @@ function getProperties(type) {
     {
       id: 1,
       type: "buy",
-      available: false,
+      available: true,
       thumbnail: root + "/static/properties/solar.jpg",
       photos: [],
       title: "HANALEI ST. Duplex (2 Single Family Dwellings)",
       description:
         "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more",
-      price: "Starting at $599,950",
+      price: "$649,950",
       location: "Hanalei Street",
       footnote:
         "Pictures are representative of floor plan and finishes but not of the exact house. Available to show 7 days a week.",
@@ -38,35 +38,34 @@ function getProperties(type) {
       id: 2,
       type: "buy",
       available: false,
+      alternate_text: "Available March 2019",
       thumbnail: root + "/static/properties/ocean.jpg",
       photos: [],
       title: "Oceanfront Homes",
       description:
-        "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more",
-      price: "$1,5m",
+        "This luxurious 2,000+ sqft. home looks and feels new! Private courtyard, great for entertaining. Manicured and fenced yard, full bath and bedroom on the first floor, tile throughout downstairs, 2 car garage with 1 bonus pagved parking space behind double gate, and vaulted ceiling in master suite. Leased solar PV system = very low electric bills. New Central AC, dishwasher, and carpet in downstairs bedroom. Automatic yard sprinklers, Kohler fixtures and custom blinds. No expense spared to keep this home perfect.",
+      price: "$789,000",
       location: "Pokai Bay",
-      footnote: "",
+      footnote:
+        "Amenities Include Bathroom on 1st floor, Full Bath on 1st Floor, Landscaped, Patio/Deck, Wall/Fence, AC Central, Auto Garage Door Opener, Blinds, Cabel TV, Ceiling Fan, Chandelier, Convection Oven, Dishwasher, Disposal, Dryer, Microwave Hood, Photovoltiac, Refridger, Smoke Detector, Washer.",
       features: [
-        "5 bedrooms",
-        "3.5 bathroom",
-        "Open floor plan",
-        "Large back yard",
-        "30 second walk from beach",
-      ],
-      upgrades: [
-        {
-          title: "Tesla Package",
-          price: "$50,000",
-          includes:
-            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
-        },
+        "4 bedrooms",
+        "3 bathroom",
+        "Living Area: 2,042 sqft.",
+        "Lanai Area: 115 sqft.",
+        "Other Area: 115 sqft.",
+        "Land Area: 4,730 sqft.",
+        "Garage: 400 sqft.",
+        "Built: 2006",
+        "Association Fee: $90/mo.",
+        "Taxes: $194/mo",
       ],
     },
     {
       id: 3,
       type: "buy",
-      available: false,
-      thumbnail: root + "/static/properties/tesla.jpg",
+      available: true,
+      thumbnail: root + "/static/properties/green.jpg",
       photos: [],
       title: "Green Homes at Laulaulei",
       description:
@@ -176,11 +175,10 @@ function getProperties(type) {
         },
       ],
     },
-    ,
     {
       id: 6,
       type: "rent",
-      available: true,
+      available: false,
       thumbnail: root + "/static/properties/solar.jpg",
       link:
         "https://honolulu.craigslist.org/oah/apa/d/waianae-brand-new-ocean-front-duplex/6816475203.html",
