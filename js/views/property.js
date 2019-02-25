@@ -50,7 +50,13 @@ function showPropertyModal(id) {
   c += "<img class='main-img' src='" + decodeURI(p.thumbnail) + "'/>";
 
   if (!p.available) {
-    c += "<div class='modal-body'><h1 class='hook'>Coming Soon!</h1></div>";
+    var alternate_text = p.alternate_text || "Coming Soon!";
+    c +=
+      "<div class='modal-body'><h1 class='hook'>" +
+      p.title +
+      "</h1><h2 class='hook'>" +
+      alternate_text +
+      "</h2></div>";
   } else {
     c += "<div class='modal-body'>";
 
@@ -71,7 +77,14 @@ function showPropertyModal(id) {
       c += "<h3>Upgrades</h3>";
       c += "<ul>";
       p.upgrades.map(function(feature) {
-        c += "<li>" + feature + "</li>";
+        c +=
+          "<li>" +
+          feature.title +
+          ": " +
+          feature.includes +
+          " - " +
+          feature.price +
+          "</li>";
       });
       c += "</ul>";
       c += "</div>"; // close UPGRADES CONTAINER

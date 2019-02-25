@@ -69,6 +69,8 @@ main .jumbotron {
 
 main .jumbotron .text-muted {
   color: white !important;
+  max-width: 575px;
+  margin: 16px auto;
 }
 
 .fa-chevron-down {
