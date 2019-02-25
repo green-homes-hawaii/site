@@ -1,7 +1,13 @@
 (function() {
   const form = document.getElementById("form");
   form.addEventListener("submit", handleForm);
+
+  renderTeam();
 })();
+
+function renderTeam() {
+  // TODO: render team members, what info required?
+}
 
 // email form for consulting handling
 function handleForm(e) {
