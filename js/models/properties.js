@@ -8,7 +8,7 @@ function getProperties(type) {
       id: 1,
       type: "buy",
       available: false,
-      thumbnail: root + "/static/properties/home-images/solar.jpg",
+      thumbnail: root + "/static/home-images/solar.jpg",
       photos: [],
       title: "HANALEI ST. Duplex (2 Single Family Dwellings)",
       description:
@@ -38,7 +38,7 @@ function getProperties(type) {
       id: 2,
       type: "buy",
       available: false,
-      thumbnail: root + "/static/properties/home-images/ocean.jpg",
+      thumbnail: root + "/static/home-images/ocean.jpg",
       photos: [],
       title: "Oceanfront Homes",
       description:
@@ -66,7 +66,7 @@ function getProperties(type) {
       id: 3,
       type: "buy",
       available: false,
-      thumbnail: root + "/static/properties/home-images/tesla.jpg",
+      thumbnail: root + "/static/home-images/tesla.jpg",
       photos: [],
       title: "Green Homes at Laulaulei",
       description:
@@ -107,7 +107,7 @@ function getProperties(type) {
       id: 4,
       type: "buy",
       available: true,
-      thumbnail: root + "/static/properties/home-images/green.jpg",
+      thumbnail: root + "/static/home-images/green.jpg",
       title: "Communities of the Future",
       description:
         "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more",
@@ -136,7 +136,7 @@ function getProperties(type) {
       id: 5,
       type: "rent",
       available: true,
-      thumbnail: root + "/static/properties/home-images/ocean.jpg",
+      thumbnail: root + "/static/home-images/ocean.jpg",
       link:
         "https://honolulu.craigslist.org/oah/apa/d/waianae-pokai-bay-ocean-view-duplex-home/6820408261.html",
       photos: [],
@@ -176,15 +176,14 @@ function getProperties(type) {
         },
       ],
     },
-    ,
     {
       id: 6,
       type: "rent",
       available: true,
-      thumbnail: root + "/static/properties/home-images/solar.jpg",
+      thumbnail: root + "/static/properties/6/img/4.jpg",
       link:
         "https://honolulu.craigslist.org/oah/apa/d/waianae-brand-new-ocean-front-duplex/6816475203.html",
-      photos: [],
+      photos: 23,
       title: "Pokai Bay Ocean View Duplex Home",
       description:
         "Ocean Front on Pokai Bay, Luxury, Direct Ocean Views, Great views of the Ocean AND Mountains, AIR CONDITIONING, Master Suite with 2 Walk-In Closets, Vaulted Ceilings, Covered Parking, Spacious Kitchen, Lanai (Balcony) off Living Room/Kitchen , Lanai (Balcony) off Master Bedroom, Swimming - Snorkeling, Kayaking - Surfing",

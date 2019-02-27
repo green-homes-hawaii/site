@@ -38,7 +38,7 @@
 }
 
 .green-bg {
-  background: url("../../static/properties/home-images/green.jpg");
+  background: url("../../static/home-images/green.jpg");
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -47,7 +47,7 @@
 }
 
 .ocean-bg {
-  background: url("../../static/properties/home-images/ocean.jpg");
+  background: url("../../static/home-images/ocean.jpg");
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -56,7 +56,7 @@
 }
 
 .solar-bg {
-  background: url("../../static/properties/home-images/solar.jpg");
+  background: url("../../static/home-images/solar.jpg");
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -65,7 +65,7 @@
 }
 
 .community-bg {
-  background: url("../../static/properties/home-images/community.jpg");
+  background: url("../../static/home-images/community.jpg");
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
