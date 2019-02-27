@@ -1,3 +1,3 @@
 (function startup() {
-  // renderPropertyThumbnailCard("buy");
+  renderPropertyThumbnailCard("buy");
 })();

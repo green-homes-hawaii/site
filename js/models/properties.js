@@ -10,10 +10,10 @@ function getProperties(type) {
       available: false,
       thumbnail: root + "/static/home-images/solar.jpg",
       photos: [],
-      title: "HANALEI ST. Duplex (2 Single Family Dwellings)",
+      title: "OCEAN POINTE: 91-1268 Kaiopua St. | Ewa Beach",
       description:
         "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more",
-      price: "Starting at $599,950",
+      price: "$599,950",
       location: "Hanalei Street",
       footnote:
         "Pictures are representative of floor plan and finishes but not of the exact house. Available to show 7 days a week.",
@@ -25,42 +25,24 @@ function getProperties(type) {
         "gated community",
         "10 minute walk from beach",
       ],
-      upgrades: [
-        {
-          title: "Tesla Package",
-          price: "$50,000",
-          includes:
-            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
-        },
-      ],
+      upgrades: [getUpgrade("tesla")],
     },
     {
       id: 2,
       type: "buy",
-      available: false,
-      thumbnail: root + "/static/home-images/ocean.jpg",
+      available: true,
+      link:
+        "https://honolulu.craigslist.org/oah/reo/d/waianae-single-family-home-brand-new/6805560817.html",
+      thumbnail: root + "/static/home-images/solar.jpg",
       photos: [],
-      title: "Oceanfront Homes",
+      title: "HANALEI ST. DUPLEX - Available March 2019",
       description:
-        "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more",
-      price: "$1,5m",
+        "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more! Gated community that's a 10 minute walk from the beach... 4 bedroom, 3 bath open floor plan, large side yard! Upgrades throughout including custom flooring, custom tile, matching granite counters, and solid wood cabinets.",
+      price: "$599,950",
       location: "Pokai Bay",
       footnote: "",
-      features: [
-        "5 bedrooms",
-        "3.5 bathroom",
-        "Open floor plan",
-        "Large back yard",
-        "30 second walk from beach",
-      ],
-      upgrades: [
-        {
-          title: "Tesla Package",
-          price: "$50,000",
-          includes:
-            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
-        },
-      ],
+      features: [],
+      upgrades: [],
     },
     {
       id: 3,
@@ -94,19 +76,12 @@ function getProperties(type) {
         "rolling coffee table",
         "Sewer and water included",
       ],
-      upgrades: [
-        {
-          title: "Tesla Package",
-          price: "$50,000",
-          includes:
-            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
-        },
-      ],
+      upgrades: [getUpgrade("tesla")],
     },
     {
       id: 4,
       type: "buy",
-      available: true,
+      available: false,
       thumbnail: root + "/static/home-images/green.jpg",
       title: "Communities of the Future",
       description:
@@ -123,14 +98,7 @@ function getProperties(type) {
         "gated community",
         "10 minutes from beach",
       ],
-      upgrades: [
-        {
-          title: "Tesla Package",
-          price: "$50,000",
-          includes:
-            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
-        },
-      ],
+      upgrades: [getUpgrade("tesla")],
     },
     {
       id: 5,
@@ -167,14 +135,7 @@ function getProperties(type) {
         "rolling coffee table",
         "Sewer and water included",
       ],
-      upgrades: [
-        {
-          title: "Tesla Package",
-          price: "$50,000",
-          includes:
-            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
-        },
-      ],
+      upgrades: [getUpgrade("tesla")],
     },
     {
       id: 6,
@@ -211,14 +172,7 @@ function getProperties(type) {
         "rolling coffee table",
         "Sewer and water included",
       ],
-      upgrades: [
-        {
-          title: "Tesla Package",
-          price: "$50,000",
-          includes:
-            "Includes 2 Tesla Power walls and photovoltic roofing panels.",
-        },
-      ],
+      upgrades: [getUpgrade("tesla")],
     },
   ];
 

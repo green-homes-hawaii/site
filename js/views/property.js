@@ -22,7 +22,8 @@ function renderPropertyThumbnailCard(type) {
       "' /><div class='card-body'><h5 class='card-title'>" +
       p.title +
       "</h5><p class='card-text' style='font-size: 90%;'>" +
-      p.description +
+      p.description.substring(0, 160) +
+      "..." +
       "</p>" +
       link +
       "</div><div class='card-footer text-muted'>" +
