@@ -1,3 +1,19 @@
+function renderLink(p) {
+  if (p.preview) {
+    return "<button class='btn btn-success' disabled>Coming soon!</button>";
+  } else if (p.link) {
+    return (
+      "<a class='btn btn-success' href='" +
+      p.link +
+      "' target='_blank'>View Property Listing</a>"
+    );
+  } else {
+    "<button onclick='showPropertyModal(" +
+      p.id +
+      ")' class='btn btn-success'>View Property Listing</button>";
+  }
+}
+
 function renderPropertyThumbnailCard(type) {
   var forSale = getProperties(type);
   var cardContainer = document.getElementById("card-container");
@@ -9,14 +25,7 @@ function renderPropertyThumbnailCard(type) {
     })
     .map(function(p) {
       var pricetag = p.type === "rent" ? "Rent for " : "Starting at ";
-
-      var link = p.link
-        ? "<a class='btn btn-success' href='" +
-          p.link +
-          "' target='_blank'>View Property Listing</a>"
-        : "<button onclick='showPropertyModal(" +
-          p.id +
-          ")' class='btn btn-success'>View Property Listing</button>";
+      var link = renderLink(p);
 
       cardContainer.innerHTML +=
         "<div class='card shadow-sm'><img src='" +
@@ -70,15 +79,17 @@ function showPropertyModal(id) {
     c += "<h2 class='line'>Price: " + p.price + "</h2>";
     c += "<div class='flex-box'>";
     c += "<div class='feature-contaier'>";
-    c += "<h3>Features</h3>";
-    c += "<ul>";
-    p.features.map(function(feature) {
-      c += "<li>" + feature + "</li>";
-    });
-    c += "</ul>";
-    c += "</div>"; // close FEATURE CONTAINER
+    if (p.features.length) {
+      c += "<h3>Features</h3>";
+      c += "<ul>";
+      p.features.map(function(feature) {
+        c += "<li>" + feature + "</li>";
+      });
+      c += "</ul>";
+      c += "</div>"; // close FEATURE CONTAINER
+    }
     c += "<div class='upgrades-contaier'>";
-    if (p.upgrades) {
+    if (p.upgrades.length) {
       c += "<h3>Upgrades</h3>";
       c += "<ul>";
       p.upgrades.map(function(feature) {
@@ -104,7 +115,7 @@ function showPropertyModal(id) {
       " Tour' class='btn btn-primary'>Schedule Tour</a>";
     c += "<a href='tel:+18085515302' class='btn btn-secondary'>Call Today!</a>";
     c +=
-      "<a href='https://5182576364.mortgage-application.net/WebApp/Start.aspx' target='_blank' class='btn btn-info'>Lendor Application</a>";
+      "<a href='https://simplenexus.com/borrower/signup/meena.na@elementmortgage.com' target='_blank' class='btn btn-info'>Lendor Application</a>";
 
     c += "</div>"; // end button container
     c += "</div>"; // close modal body

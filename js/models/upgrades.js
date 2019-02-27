@@ -11,7 +11,7 @@ function getUpgrades() {
 
 function getUpgrade(id) {
   var upgrades = getUpgrades();
-  upgrades.filter(function(upgrade) {
+  return upgrades.filter(function(upgrade) {
     return upgrade.id === id;
-  });
+  })[0];
 }
