@@ -7,8 +7,10 @@ function getProperties(type) {
     {
       id: 1,
       type: "buy",
-      available: false,
-      thumbnail: root + "/static/home-images/solar.jpg",
+      available: true,
+      link:
+        "https://drive.google.com/open?id=0B8RnZnIJqnmQT29ublVhRUhmWnBIajE4VVhKLXpuQkVWTS1J",
+      thumbnail: root + "/static/properties/1/0.jpg",
       photos: [],
       title: "OCEAN POINTE: 91-1268 Kaiopua St. | Ewa Beach",
       description:
@@ -33,7 +35,7 @@ function getProperties(type) {
       available: true,
       link:
         "https://honolulu.craigslist.org/oah/reo/d/waianae-single-family-home-brand-new/6805560817.html",
-      thumbnail: root + "/static/home-images/solar.jpg",
+      thumbnail: root + "/static/properties/6/img/4.jpg",
       photos: [],
       title: "HANALEI ST. DUPLEX - Available March 2019",
       description:

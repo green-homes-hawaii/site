@@ -2,34 +2,38 @@ function renderPropertyThumbnailCard(type) {
   var forSale = getProperties(type);
   var cardContainer = document.getElementById("card-container");
 
-  forSale.map(function(p) {
-    var pricetag = p.type === "rent" ? "Rent for " : "Starting at ";
+  forSale
+    .filter(function(property) {
+      console.log(property);
+      return property.available;
+    })
+    .map(function(p) {
+      var pricetag = p.type === "rent" ? "Rent for " : "Starting at ";
 
-    var link = p.link
-      ? "<a class='btn btn-success' href='" +
-        p.link +
-        "' target='_blank'>View Property Listing</a>"
-      : "<button onclick='showPropertyModal(" +
-        p.id +
-        ")' class='btn btn-success'>View Property Listing</button>";
+      var link = p.link
+        ? "<a class='btn btn-success' href='" +
+          p.link +
+          "' target='_blank'>View Property Listing</a>"
+        : "<button onclick='showPropertyModal(" +
+          p.id +
+          ")' class='btn btn-success'>View Property Listing</button>";
 
-    pricetag += p.price;
-    cardContainer.innerHTML +=
-      "<div class='card shadow-sm'><img src='" +
-      p.thumbnail +
-      "' class='card-img-top' alt='" +
-      p.description +
-      "' /><div class='card-body'><h5 class='card-title'>" +
-      p.title +
-      "</h5><p class='card-text' style='font-size: 90%;'>" +
-      p.description.substring(0, 160) +
-      "..." +
-      "</p>" +
-      link +
-      "</div><div class='card-footer text-muted'>" +
-      pricetag +
-      "</div></div>";
-  });
+      cardContainer.innerHTML +=
+        "<div class='card shadow-sm'><img src='" +
+        p.thumbnail +
+        "' class='card-img-top' alt='" +
+        p.description +
+        "' /><div class='card-body'><h5 class='card-title'>" +
+        p.title +
+        "</h5><p class='card-text' style='font-size: 90%;'>" +
+        p.description.substring(0, 160) +
+        "..." +
+        "</p>" +
+        link +
+        "</div><div class='card-footer text-muted'>" +
+        p.price +
+        "</div></div>";
+    });
 }
 
 function showPropertyModal(id) {
