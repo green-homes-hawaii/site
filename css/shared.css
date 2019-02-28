@@ -61,8 +61,13 @@ body.noScroll {
 }
 
 main .jumbotron {
-  background-color: #469408;
-  border-top: 2px solid #377506;
+  background: url("../static/bg.jpg");
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-top: 4px solid #2a9742;
   border-radius: 0;
   color: white;
 }
