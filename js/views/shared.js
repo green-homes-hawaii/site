@@ -1,3 +1,14 @@
+// remove empty key/value pairs from objects
+function removeEmpties(obj) {
+  var newObj = {};
+  Object.keys(obj).forEach(function(prop) {
+    if (obj[prop]) {
+      newObj[prop] = obj[prop];
+    }
+  });
+  return newObj;
+}
+
 function toggleModal(modal) {
   var m = modal || document.getElementById("modal");
   var body = document.getElementsByTagName("body")[0];
