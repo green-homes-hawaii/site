@@ -27,8 +27,12 @@ function renderPropertyThumbnailCard(type) {
       var pricetag = p.type === "rent" ? "Rent for " : "Starting at ";
       var link = renderLink(p);
 
+      var featuredClass = p.featured && "featured";
+
       cardContainer.innerHTML +=
-        "<div class='card shadow-sm'><img src='" +
+        "<div class='card shadow-sm " +
+        featuredClass +
+        "'><img src='" +
         p.thumbnail +
         "' class='card-img-top' alt='" +
         p.description +

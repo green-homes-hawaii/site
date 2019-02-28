@@ -8,6 +8,7 @@ function getProperties(type) {
       id: 1,
       type: "buy",
       available: true,
+      featured: true,
       link:
         "https://drive.google.com/open?id=0B8RnZnIJqnmQT29ublVhRUhmWnBIajE4VVhKLXpuQkVWTS1J",
       thumbnail: root + "/static/properties/1/0.jpg",

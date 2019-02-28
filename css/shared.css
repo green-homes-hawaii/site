@@ -115,6 +115,14 @@ footer {
   justify-content: space-between;
 }
 
+.featured {
+  border: 5px solid #ffd700;
+}
+
+.featured .btn {
+  border: 2px solid #ffd700;
+}
+
 .button-container .btn {
   margin: 4px;
 }
