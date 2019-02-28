@@ -3,8 +3,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 24px 0;
+  border-top: 4px solid #2a9742;
 
   max-width: 1600px;
+
+  background-color: whitesmoke;
 }
 
 .container-fluid .flex-item {

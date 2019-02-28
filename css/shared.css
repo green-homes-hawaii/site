@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  color: #2a9742;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -129,8 +133,13 @@ main .mini-info a {
 }
 
 footer {
+  border-top: 4px solid #2a9742;
+}
+
+footer .container {
   display: flex;
   justify-content: space-between;
+  padding: 16px 0;
 }
 
 .featured {
