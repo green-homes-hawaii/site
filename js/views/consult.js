@@ -41,6 +41,7 @@ function handleForm(e) {
 
       formResponse.innerHTML =
         "Thanks for the message. I’ll be in touch shortly.";
+      formResponse.classList.add("success");
 
       closeConsulting();
       formResponse.style = "display: none";
@@ -48,6 +49,7 @@ function handleForm(e) {
       // The form submission failed
       formResponse.innerHTML =
         "We are currently trying to fix our servers, thank you for your patience!";
+      formResponse.classList.add("error");
       console.error(JSON.parse(response.target.response).message);
     }
   };

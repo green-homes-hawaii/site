@@ -12,6 +12,19 @@ body.noScroll {
   overflow: hidden;
 }
 
+#js-form-response {
+  font-weight: bold;
+  margin: 8px auto;
+}
+
+.success {
+  color: #469408;
+}
+
+.error {
+  color: #ff0000;
+}
+
 .navbar {
   padding: 16px;
 }
