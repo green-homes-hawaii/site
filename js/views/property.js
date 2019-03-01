@@ -61,10 +61,14 @@ function showPropertyModal(id) {
     m.innerHTML =
       "<div class='alert alert-info' role='alert'>This property does not exist...</div>";
   }
+  c += "<div class='inner-small'>";
 
   c +=
-    "<div class='inner-small'><button id='close-btn' onclick='toggleModal()'><i class='fas fa-times'></i></button>";
+    "<div class='modal-title'><h1>" +
+    p.title +
+    "</h1><button id='close-btn' onclick='toggleModal()'><i class='fas fa-times'></i></button></div>";
 
+  c += "<div class='modal-body'>";
   if (p.photos.length) {
     c +=
       "<div id='carousel' class='carousel slide' data-ride='carousel'><div class='carousel-inner'>";
@@ -85,10 +89,11 @@ function showPropertyModal(id) {
     c += "<img class='main-img' src='" + decodeURI(p.thumbnail) + "'/>";
   }
 
+  c += "<div class='modal-body__text'>";
   if (!p.available) {
     var alternate_text = p.alternate_text || "Coming Soon!";
     c +=
-      "<div class='modal-body'><h1 class='hook'>" +
+      "<h1 class='hook'>" +
       p.title +
       "</h1><h2 class='hook'>" +
       alternate_text +
@@ -96,9 +101,6 @@ function showPropertyModal(id) {
   } else {
     var pricetag = p.type === "rent" ? "Rent for " : "Starting at ";
 
-    c += "<div class='modal-body'>";
-
-    c += "<h1 class='hook'>" + p.title + "</h1>";
     c += "<h2 class='line'>" + p.description + "</h2>";
     c += "<h2 class='line'>" + pricetag + " " + p.price + ".</h2>";
     c += "<div class='flex-box'>";
@@ -149,6 +151,7 @@ function showPropertyModal(id) {
       "<a href='https://simplenexus.com/borrower/signup/meena.na@elementmortgage.com' target='_blank' class='btn btn-info'>Lendor Application</a>";
 
     c += "</div>"; // end button container
+    c += "<div>";
     c += "</div>"; // close modal body
     c += "</div>"; // close inner-small
   }

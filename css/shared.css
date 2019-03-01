@@ -167,7 +167,6 @@ footer .container {
   left: 0;
   right: 0;
   display: block;
-  background: RGBA(94, 204, 98, 0.9);
   height: 100%;
 
   display: flex;
@@ -177,32 +176,60 @@ footer .container {
   overflow-y: scroll;
 }
 
-#modal .inner-small {
-  background: #5ecc62;
+#modal.shown,
+#modal .inner,
+#modal .modal-body {
+  background: RGBA(255, 255, 255, 0.77);
+}
+
+#modal .inner {
   height: 100%;
+  padding: 16px;
+  max-width: 1024px;
+  margin: 0 auto;
 
   position: relative;
 }
 
-#modal #close-btn {
-  position: absolute;
-  background: none;
-  right: 0;
-  border: none;
-  font-size: 250%;
-  padding: 16px 24px;
-  color: red;
-  font-weight: 100;
+#modal .modal-title {
+  position: fixed;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: whitesmoke;
+  border-bottom: 4px solid slategray;
   z-index: 9;
+  width: 100%;
+  max-width: inherit;
+}
+
+#modal .modal-body {
+  padding: 0;
+}
+
+#modal .modal-body .modal-body__text {
+  padding: 16px;
+}
+
+#modal .modal-title h1 {
+  font-size: 1.5rem;
+  margin-left: 16px;
+  margin-bottom: 0;
+}
+
+#modal .modal-title #close-btn {
+  background: none;
+  margin-left: auto;
+  padding-right: 16px;
+  border: none;
+  font-size: 200%;
+  color: darkslategrey;
+  font-weight: 100;
 }
 
 #modal .main-img {
   width: 100%;
-}
-
-#modal .modal-body {
-  color: white;
-  background: #5ecc62;
 }
 
 .hook,
