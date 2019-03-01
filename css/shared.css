@@ -193,6 +193,7 @@ footer .container {
   padding: 16px 24px;
   color: red;
   font-weight: 100;
+  z-index: 9;
 }
 
 #modal .main-img {

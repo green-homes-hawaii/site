@@ -65,7 +65,25 @@ function showPropertyModal(id) {
   c +=
     "<div class='inner-small'><button id='close-btn' onclick='toggleModal()'><i class='fas fa-times'></i></button>";
 
-  c += "<img class='main-img' src='" + decodeURI(p.thumbnail) + "'/>";
+  if (p.photos.length) {
+    c +=
+      "<div id='carousel' class='carousel slide' data-ride='carousel'><div class='carousel-inner'>";
+    // loop photos
+
+    p.photos.map(function(photo, i) {
+      var active = i === 0 ? "active" : "";
+      c +=
+        "<div class='carousel-item " +
+        active +
+        "'><img class='d-block w-100' src='" +
+        photo +
+        "'></div>";
+    });
+    c +=
+      "</div><a class='carousel-control-prev' href='#carousel' role='button' data-slide='prev'><span class='carousel-control-prev-icon' aria-hidden='true'></span><span class='sr-only'>Previous</span></a><a class='carousel-control-next' href='#carousel' role='button' data-slide='next'><span class='carousel-control-next-icon' aria-hidden='true'></span><span class='sr-only'>Next</span></a></div>";
+  } else {
+    c += "<img class='main-img' src='" + decodeURI(p.thumbnail) + "'/>";
+  }
 
   if (!p.available) {
     var alternate_text = p.alternate_text || "Coming Soon!";

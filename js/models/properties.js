@@ -39,11 +39,11 @@ function getProperties(type) {
         "https://honolulu.craigslist.org/oah/reo/d/waianae-single-family-home-brand-new/6805560817.html",
       thumbnail: root + "/static/properties/2/0.jpg",
       photos: [
-        root + "/static/properties/1/0.jpg",
-        root + "/static/properties/1/1.jpg",
-        root + "/static/properties/1/2.jpg",
-        root + "/static/properties/1/3.jpg",
-        root + "/static/properties/1/4.jpg",
+        root + "/static/properties/2/0.jpg",
+        root + "/static/properties/2/1.jpg",
+        root + "/static/properties/2/2.jpg",
+        root + "/static/properties/2/3.jpg",
+        root + "/static/properties/2/4.jpg",
       ],
       title: "HANALEI Street - Available March 2019",
       description:
