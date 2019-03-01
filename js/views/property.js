@@ -76,11 +76,13 @@ function showPropertyModal(id) {
       alternate_text +
       "</h2></div>";
   } else {
+    var pricetag = p.type === "rent" ? "Rent for " : "Starting at ";
+
     c += "<div class='modal-body'>";
 
     c += "<h1 class='hook'>" + p.title + "</h1>";
     c += "<h2 class='line'>" + p.description + "</h2>";
-    c += "<h2 class='line'>Price: " + p.price + "</h2>";
+    c += "<h2 class='line'>" + pricetag + " " + p.price + ".</h2>";
     c += "<div class='flex-box'>";
     c += "<div class='feature-contaier'>";
     if (p.features.length) {
@@ -112,6 +114,13 @@ function showPropertyModal(id) {
     c += "</div>"; // close features & upgrades
     c += p.footnote ? "<p class='small'>* " + p.footnote + "</p>" : "";
     c += "<div class='button-container'>";
+
+    if (p.link) {
+      c +=
+        "<a target='_blank' href='" +
+        p.link +
+        "' class='btn btn-success'>More Information</a>";
+    }
 
     c +=
       "<a target='_blank' href='mailto:greenhomes808@gmail.com?subject=" +
