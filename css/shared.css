@@ -143,11 +143,24 @@ footer .container {
 }
 
 .featured {
-  border: 5px solid #ffd700;
+  position: relative;
+  border: 5px solid #2a9742;
 }
 
 .featured .btn {
-  border: 2px solid #ffd700;
+  border: 2px solid #2a9742;
+}
+
+.featured span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 4px 4px 8px;
+  background: #2a9742;
+  color: white;
+  font-size: 200%;
+  font-weight: 500;
+  border-bottom-left-radius: 4px;
 }
 
 .button-container .btn {
