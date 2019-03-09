@@ -83,7 +83,7 @@ function getProperties(type) {
     {
       id: 3,
       type: "buy",
-      available: true,
+      available: false,
       thumbnail: root + "/static/properties/3/0.jpg",
       photos: [],
       title: "Pokai Bay Single Family Homes",
