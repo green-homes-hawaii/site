@@ -68,7 +68,7 @@ function getProperties(type) {
         "Split AC",
         "Solid Wood Cabinetry",
         "Insinkerator Garbage Disposal",
-        "Whirlpool Appliances",
+        "Samsung Appliances",
         "Premium Paint",
         "Heat Exchanger Water Heater",
         "Vinyl Plank Floors",
