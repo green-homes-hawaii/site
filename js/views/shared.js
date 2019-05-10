@@ -1,3 +1,12 @@
+function catchPhoneCalls(e) {
+  var os = window.navigator.oscpu;
+
+  if (os.contains("win" || "lin")) {
+    e.preventDefault();
+    window.confirm("Please give us a call at 808-551-5302!");
+  }
+}
+
 // remove empty key/value pairs from objects
 function removeEmpties(obj) {
   var newObj = {};
