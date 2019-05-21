@@ -17,7 +17,7 @@ function getProperties(type) {
       description:
         "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more",
       price: "$789,000",
-      location: "Hanalei Street",
+      location: "Ocean Pointe",
       footnote:
         "Pictures are representative of floor plan and finishes but not of the exact house. Available to show 7 days a week.",
       features: [
@@ -39,13 +39,20 @@ function getProperties(type) {
         "https://honolulu.craigslist.org/oah/reo/d/waianae-single-family-home-brand-new/6805560817.html",
       thumbnail: root + "/static/properties/2/0.jpg",
       photos: [
-        root + "/static/properties/2/0.jpg",
         root + "/static/properties/2/1.jpg",
         root + "/static/properties/2/2.jpg",
         root + "/static/properties/2/3.jpg",
         root + "/static/properties/2/4.jpg",
+        root + "/static/properties/2/5.jpg",
+        root + "/static/properties/2/6.jpg",
+        root + "/static/properties/2/7.jpg",
+        root + "/static/properties/2/8.jpg",
+        root + "/static/properties/2/9.jpg",
+        root + "/static/properties/2/10.jpg",
+        root + "/static/properties/2/11.jpg",
+        root + "/static/properties/2/12.jpg",
       ],
-      title: "HANALEI Street - Available March 2019",
+      title: "84-808 Hanalei Street",
       description:
         "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more!",
       price: "$599,950",

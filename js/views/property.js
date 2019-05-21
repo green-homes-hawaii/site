@@ -71,7 +71,7 @@ function showPropertyModal(id) {
   c += "<div class='modal-body'>";
   if (p.photos.length) {
     c +=
-      "<div id='carousel' class='carousel slide' data-ride='carousel'><div class='carousel-inner'>";
+      "<div id='carousel' class='carousel slide carousel-fade' data-ride='carousel'><div class='carousel-inner'>";
     // loop photos
 
     p.photos.map(function(photo, i) {
