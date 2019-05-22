@@ -8,7 +8,12 @@
 
   max-width: 1600px;
 
-  background-color: whitesmoke;
+  background: url("../../static/bg-lite.jpg");
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .container-fluid .flex-item {
