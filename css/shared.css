@@ -142,33 +142,6 @@ footer .container {
   padding: 16px;
 }
 
-.featured {
-  position: relative;
-  border: 5px solid #2a9742;
-}
-
-.featured .btn {
-  border: 2px solid #2a9742;
-}
-
-.featured span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 4px 4px 4px 8px;
-  background: #2a9742;
-  color: white;
-  font-size: 120%;
-  font-weight: 500;
-  border-bottom-left-radius: 4px;
-}
-
-@media (min-width: 768px) {
-  .featured span {
-    font-size: 200%;
-  }
-}
-
 .button-container .btn {
   margin: 4px;
 }
@@ -212,13 +185,14 @@ footer .container {
 
 #modal .modal-title {
   position: fixed;
-  height: 60px;
+  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: whitesmoke;
   border-bottom: 4px solid slategray;
   z-index: 9;
+  padding: 8px;
   width: 100%;
   max-width: inherit;
 }
@@ -280,4 +254,9 @@ footer .container {
 .carousel-control-next,
 .carousel-control-prev {
   padding-top: 60px;
+}
+
+.nothing-here {
+  margin: 0 auto 32px auto;
+  font-size: 160%;
 }

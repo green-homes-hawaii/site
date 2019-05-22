@@ -26,6 +26,8 @@
 
   align-items: flex-end;
   justify-content: flex-start;
+
+  border: 4px solid white;
 }
 
 .container-fluid .flex-item .inner {
@@ -65,12 +67,12 @@
   background-size: cover;
 }
 
-.completed {
-  border: 4px solid #cc0202;
+.flex-item.completed {
+  border-color: #cc0202;
   position: relative;
 }
 
-.completed span {
+.flex-item.completed span {
   position: absolute;
   top: 0;
   right: 0;
@@ -83,7 +85,34 @@
 }
 
 @media (min-width: 768px) {
-  .completed span {
+  .flex-item.completed span {
+    font-size: 200%;
+  }
+}
+
+.flex-item.featured {
+  position: relative;
+  border: 4px solid #2a9742;
+}
+
+.flex-item.featured .btn {
+  border: 2px solid #2a9742;
+}
+
+.flex-item.featured span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 4px 4px 8px;
+  background: #2a9742;
+  color: white;
+  font-size: 120%;
+  font-weight: 500;
+  border-bottom-left-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .flex-item.featured span {
     font-size: 200%;
   }
 }
