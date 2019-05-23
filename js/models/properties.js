@@ -37,7 +37,7 @@ function getProperties(type) {
       featured: true,
       link:
         "https://honolulu.craigslist.org/oah/reo/d/waianae-single-family-home-brand-new/6805560817.html",
-      thumbnail: root + "/static/properties/2/0.jpg",
+      thumbnail: root + "/static/properties/2/1.jpg",
       photos: [
         root + "/static/properties/2/1.jpg",
         root + "/static/properties/2/2.jpg",
@@ -52,11 +52,11 @@ function getProperties(type) {
         root + "/static/properties/2/11.jpg",
         root + "/static/properties/2/12.jpg",
       ],
-      title: "84-808 Hanalei Street",
+      title: "Green Homes at Hanalei",
       description:
         "Extremely energy efficient = low monthly bills. LED lighting, dual flush toilets, dual pane windows, and so much more!",
       price: "$599,950",
-      location: "Hanalei",
+      location: "84-808 Hanalei Street",
       footnote:
         "Upgrades included throughout including custom flooring, custom tile, matching granite counters, and solid wood cabinets. Pictures are representative of floor plan and finishes but not of the exact house.",
       features: [
@@ -91,14 +91,31 @@ function getProperties(type) {
     {
       id: 3,
       type: "buy",
-      available: false,
+      available: true,
       thumbnail: root + "/static/properties/3/0.jpg",
-      photos: [],
-      title: "Pokai Bay Single Family Homes",
-      description: "",
-      price: "...",
-      location: "Pokai Bay",
-      footnote: "p",
+      photos: [
+        root + "/static/properties/3/0.jpg",
+        root + "/static/properties/3/1.jpg",
+        root + "/static/properties/3/2.jpg",
+        root + "/static/properties/3/3.jpg",
+        root + "/static/properties/3/4.jpg",
+        root + "/static/properties/3/5.jpg",
+        root + "/static/properties/3/6.jpg",
+        root + "/static/properties/3/7.jpg",
+        root + "/static/properties/3/8.jpg",
+        root + "/static/properties/3/9.jpg",
+        root + "/static/properties/3/10.jpg",
+        root + "/static/properties/3/11.jpg",
+        root + "/static/properties/3/12.jpg",
+      ],
+      title: "Pokai Bay Oceanfront Dreams",
+      link:
+        "https://drive.google.com/file/d/0B8BYLcIsfATqckQ4c1NMVG4zMko0MWhqbVY0Rzc4dHpxWng4/view?usp=sharing",
+      description:
+        "Dreaming of sunsets from your lanai or swimming with dolphins? Swim, surf, SUP, paddle, fish, all are steps away when you live on Pokai Bay. Jump in the water for a surf while your kids are swimming near the lifeguard stand. Enjoy this large custom home featuring 5 large bedrooms, 3 full baths + 1/2 bath in addition to a second large living room with wet bar. The 2 master suites make hosting family and guests seamless. Want to combat global warming? This smart home is solar powered, with a 10KW system, 2 Tesla Power walls and full Smart Home Automation!!! Must see and feel the quality and location.",
+      price: "$1.195m",
+      location: "85-065 Waianae Valley Road",
+      footnote: "",
       features: [],
       upgrades: [],
     },
@@ -119,7 +136,7 @@ function getProperties(type) {
     {
       id: 5,
       type: "rent",
-      available: true,
+      available: false,
       thumbnail: root + "/static/home-images/ocean.jpg",
       link:
         "https://honolulu.craigslist.org/oah/apa/d/waianae-pokai-bay-ocean-view-duplex-home/6820408261.html",
@@ -156,7 +173,7 @@ function getProperties(type) {
     {
       id: 6,
       type: "rent",
-      available: true,
+      available: false,
       thumbnail: root + "/static/properties/6/img/4.jpg",
       link:
         "https://honolulu.craigslist.org/oah/apa/d/waianae-brand-new-ocean-front-duplex/6816475203.html",

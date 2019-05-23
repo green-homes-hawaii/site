@@ -15,15 +15,15 @@ function renderLink(p) {
 }
 
 function renderPropertyThumbnailCard(type) {
-  var forSale = getProperties(type);
+  var forSale = getProperties(type).filter(function(property) {
+    console.log(property);
+    return property.available;
+  });
+
   var cardContainer = document.getElementById("card-container");
 
-  forSale
-    .filter(function(property) {
-      console.log(property);
-      return property.available;
-    })
-    .map(function(p) {
+  if (forSale.length >= 1) {
+    forSale.map(function(p) {
       var pricetag = p.type === "rent" ? "Rent for " : "Starting at ";
       var link = renderLink(p);
 
@@ -47,6 +47,10 @@ function renderPropertyThumbnailCard(type) {
         p.price +
         "</div></div>";
     });
+  } else {
+    cardContainer.innerHTML +=
+      "<h1 class='nothing-here'>There are no properties available at the time, check back again soon!</h1>";
+  }
 }
 
 function showPropertyModal(id) {
@@ -103,6 +107,16 @@ function showPropertyModal(id) {
 
     c += "<h2 class='line'>" + p.description + "</h2>";
     c += "<h2 class='line'>" + pricetag + " " + p.price + ".</h2>";
+    c += "<div class='button-container'>";
+    c +=
+      "<a target='_blank' href='http://maps.apple.com/?saddr" +
+      p.location +
+      "'class='btn btn-primary'><i class='fab fa-apple'></i> Apple Maps</a>";
+    c +=
+      "<a target='_blank' href='https://www.google.com/maps/search/?api=1&query=" +
+      p.location +
+      "'class='btn btn-secondary'><i class='fab fa-google'></i> Google Maps</a>";
+    c += "</div>";
     c += "<div class='flex-box'>";
     c += "<div class='feature-contaier'>";
     if (p.features.length) {
@@ -114,7 +128,7 @@ function showPropertyModal(id) {
       c += "</ul>";
       c += "</div>"; // close FEATURE CONTAINER
     }
-    c += "<div class='upgrades-contaier'>";
+    c += "<div class='upgrades-container'>";
     if (p.upgrades.length) {
       c += "<h3>Upgrades</h3>";
       c += "<ul>";
@@ -152,9 +166,8 @@ function showPropertyModal(id) {
       "<a href='https://simplenexus.com/borrower/signup/meena.na@elementmortgage.com' target='_blank' class='btn btn-info'>Lendor Application</a>";
 
     c += "</div>"; // end button container
-    c += "<div>";
-    c += "</div>"; // close modal body
     c += "</div>"; // close inner-small
+    c += "</div>"; // close modal body
   }
 
   m.innerHTML = c;
