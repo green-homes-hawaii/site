@@ -113,7 +113,7 @@ function getProperties(type) {
         "https://drive.google.com/file/d/0B8BYLcIsfATqckQ4c1NMVG4zMko0MWhqbVY0Rzc4dHpxWng4/view?usp=sharing",
       description:
         "Dreaming of sunsets from your lanai or swimming with dolphins? Swim, surf, SUP, paddle, fish, all are steps away when you live on Pokai Bay. Jump in the water for a surf while your kids are swimming near the lifeguard stand. Enjoy this large custom home featuring 5 large bedrooms, 3 full baths + 1/2 bath in addition to a second large living room with wet bar. The 2 master suites make hosting family and guests seamless. Want to combat global warming? This smart home is solar powered, with a 10KW system, 2 Tesla Power walls and full Smart Home Automation!!! Must see and feel the quality and location.",
-      price: "$1.195m",
+      price: "$1.195M",
       location: "85-065 Waianae Valley Road",
       footnote: "",
       features: [],
