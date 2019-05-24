@@ -47,7 +47,7 @@ function getProperties(type) {
           text: "More Information",
         },
         {
-          href: "https://player.vimeo.com/video/336661377",
+          href: "https://player.vimeo.com/video/336921456",
           text: "Video Tour",
           class: "warning",
         },
