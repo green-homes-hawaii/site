@@ -149,11 +149,18 @@ function showPropertyModal(id) {
     c += p.footnote ? "<p class='small'>* " + p.footnote + "</p>" : "";
     c += "<div class='button-container'>";
 
-    if (p.link) {
-      c +=
-        "<a target='_blank' href='" +
-        p.link +
-        "' class='btn btn-success'>More Information</a>";
+    if (p.links.length) {
+      p.links.map(function(link) {
+        var btnClass = link.class ? link.class : "success";
+        c +=
+          "<a target='_blank' href='" +
+          link.href +
+          "' class='btn btn-" +
+          btnClass +
+          "'>" +
+          link.text +
+          "</a>";
+      });
     }
 
     c +=

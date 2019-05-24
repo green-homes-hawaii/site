@@ -9,8 +9,13 @@ function getProperties(type) {
       type: "buy",
       available: false,
       featured: false,
-      link:
-        "https://drive.google.com/open?id=0B8RnZnIJqnmQT29ublVhRUhmWnBIajE4VVhKLXpuQkVWTS1J",
+      links: [
+        {
+          href:
+            "https://drive.google.com/open?id=0B8RnZnIJqnmQT29ublVhRUhmWnBIajE4VVhKLXpuQkVWTS1J",
+          text: "More Information",
+        },
+      ],
       thumbnail: root + "/static/properties/1/0.jpg",
       photos: [],
       title: "OCEAN POINTE: 91-1268 Kaiopua St. | Ewa Beach",
@@ -35,8 +40,18 @@ function getProperties(type) {
       type: "buy",
       available: true,
       featured: true,
-      link:
-        "https://honolulu.craigslist.org/oah/reo/d/waianae-single-family-home-brand-new/6805560817.html",
+      links: [
+        {
+          href:
+            "https://honolulu.craigslist.org/oah/reo/d/waianae-single-family-home-brand-new/6805560817.html",
+          text: "More Information",
+        },
+        {
+          href: "https://player.vimeo.com/video/336661377",
+          text: "Video Tour",
+          class: "warning",
+        },
+      ],
       thumbnail: root + "/static/properties/2/1.jpg",
       photos: [
         root + "/static/properties/2/1.jpg",
@@ -109,8 +124,13 @@ function getProperties(type) {
         root + "/static/properties/3/12.jpg",
       ],
       title: "Pokai Bay Oceanfront Dreams",
-      link:
-        "https://drive.google.com/file/d/0B8BYLcIsfATqckQ4c1NMVG4zMko0MWhqbVY0Rzc4dHpxWng4/view?usp=sharing",
+      links: [
+        {
+          href:
+            "https://drive.google.com/file/d/0B8BYLcIsfATqckQ4c1NMVG4zMko0MWhqbVY0Rzc4dHpxWng4/view?usp=sharing",
+          text: "More Information",
+        },
+      ],
       description:
         "Dreaming of sunsets from your lanai or swimming with dolphins? Swim, surf, SUP, paddle, fish, all are steps away when you live on Pokai Bay. Jump in the water for a surf while your kids are swimming near the lifeguard stand. Enjoy this large custom home featuring 5 large bedrooms, 3 full baths + 1/2 bath in addition to a second large living room with wet bar. The 2 master suites make hosting family and guests seamless. Want to combat global warming? This smart home is solar powered, with a 10KW system, 2 Tesla Power walls and full Smart Home Automation!!! Must see and feel the quality and location.",
       price: "$1.195M",
@@ -138,8 +158,13 @@ function getProperties(type) {
       type: "rent",
       available: false,
       thumbnail: root + "/static/home-images/ocean.jpg",
-      link:
-        "https://honolulu.craigslist.org/oah/apa/d/waianae-pokai-bay-ocean-view-duplex-home/6820408261.html",
+      links: [
+        {
+          href:
+            "https://honolulu.craigslist.org/oah/apa/d/waianae-pokai-bay-ocean-view-duplex-home/6820408261.html",
+          text: "More Information",
+        },
+      ],
       photos: [],
       title: "Brand New Ocean Front Duplex Home",
       description:
@@ -175,9 +200,13 @@ function getProperties(type) {
       type: "rent",
       available: false,
       thumbnail: root + "/static/properties/6/img/4.jpg",
-      link:
-        "https://honolulu.craigslist.org/oah/apa/d/waianae-brand-new-ocean-front-duplex/6816475203.html",
-      photos: 23,
+      links: [
+        {
+          href:
+            "https://honolulu.craigslist.org/oah/apa/d/waianae-brand-new-ocean-front-duplex/6816475203.html",
+          text: "More Information",
+        },
+      ],
       title: "Pokai Bay Ocean View Duplex Home",
       description:
         "Ocean Front on Pokai Bay, Luxury, Direct Ocean Views, Great views of the Ocean AND Mountains, AIR CONDITIONING, Master Suite with 2 Walk-In Closets, Vaulted Ceilings, Covered Parking, Spacious Kitchen, Lanai (Balcony) off Living Room/Kitchen , Lanai (Balcony) off Master Bedroom, Swimming - Snorkeling, Kayaking - Surfing",
