@@ -54,3 +54,24 @@ function handleForm(e) {
     }
   };
 }
+
+(function printTeamMembers() {
+  var teamContainer = document.getElementById("team-container");
+  var team = getTeam();
+  var inner = "";
+
+  team.map(function(member) {
+    inner +=
+      "<div class='team-member'><img src='" +
+      member.img +
+      "'/><h3>" +
+      member.name +
+      "</h3><h4>" +
+      member.title +
+      "</h4><p>" +
+      member.description +
+      "</p><div class='button-container'></div></div>"; // add PHONE, EMAIL button
+  });
+
+  teamContainer.innerHTML += inner;
+})();

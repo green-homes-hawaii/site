@@ -132,6 +132,7 @@
             consulting. Call us today to discuss your plans for the future!
           </p>
           <p class="button-container">
+            <a href="#team" class="btn btn-info">Meet the Team</a>
             <a href="#form" class="btn btn-success">Get In Touch!</a>
             <a
               href="tel:+18085515302"
@@ -143,81 +144,76 @@
         </div>
       </section>
 
-      <div class="container flex-container">
-        <form
-          id="form"
-          action="https://7zim819we7.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer"
-          method="POST"
-        >
-          <h2>How Can We Work Together?</h2>
-          <div class="form-group">
-            <label for="full_name">Name</label>
-            <input
-              type="text"
-              class="form-control"
-              name="full_name"
-              aria-describedby="emailHelp"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              name="email"
-              aria-describedby="emailHelp"
-              required
-            />
-            <small id="emailHelp" class="form-text text-muted"
-              >We'll never share your email with anyone else.</small
-            >
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <select class="form-control" name="subject" required>
-              <option value="new_homes">New Homes For Sale</option>
-              <option value="rentals">Rental Properties</option>
-              <option value="existing_communities">Existing Communities</option>
-              <option value="green_tech">Green Home Technology</option>
-              <option value="dev_services">Development Services</option>
-              <option value="real_estate_services"
-                >Real Estate Agent Services</option
-              >
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Details</label>
-            <textarea
-              class="form-control"
-              name="details"
-              rows="3"
-              placeholder="Let us know how we can help you!"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-success">Submit</button>
-          <p id="js-form-response"></p>
-        </form>
-
-        <div class="info-box">
-          <h2>Building Sustainable Communities</h2>
-          <iframe
-            width="100%"
-            height="300px"
-            src="https://www.youtube.com/embed/ktdF9L180gY"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+      <section>
+        <div id="team" class="container">
+          <h2>Committed To Excellence</h2>
           <p>
-            Through community involvement, we are able to not only build
-            sustainable, efficient and environmentally housing at affordable
-            prices, but we strive to create stronger Ohana through education and
-            workshops.
+            Our team has over a combined 45 years experience in sustainable
+            green housing construction and real estate. Let us find the perfect
+            match for you!
           </p>
+          <div id="team-container"></div>
         </div>
-      </div>
+      </section>
+
+      <section class="form-container">
+        <div class="container">
+          <form
+            id="form"
+            action="https://7zim819we7.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer"
+            method="POST"
+          >
+            <h2>How Can We Work Together?</h2>
+            <div class="form-group">
+              <label for="full_name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="full_name"
+                aria-describedby="emailHelp"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                aria-describedby="emailHelp"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select class="form-control" name="subject" required>
+                <option value="new_homes">New Homes For Sale</option>
+                <option value="rentals">Rental Properties</option>
+                <option value="existing_communities"
+                  >Existing Communities</option
+                >
+                <option value="green_tech">Green Home Technology</option>
+                <option value="dev_services">Development Services</option>
+                <option value="real_estate_services"
+                  >Real Estate Agent Services</option
+                >
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Details</label>
+              <textarea
+                class="form-control"
+                name="details"
+                rows="3"
+                placeholder="Let us know how we can help you!"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Submit</button>
+            <p id="js-form-response"></p>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -244,6 +240,7 @@
     ></script>
 
     <script src="../js/views/shared.js"></script>
+    <script src="../js/models/team.js"></script>
     <script src="../js/views/consult.js"></script>
   </body>
 </html>

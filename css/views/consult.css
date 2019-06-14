@@ -1,11 +1,41 @@
-.flex-container {
-  align-items: flex-start;
+#team {
+  text-align: center;
 }
 
-.flex-container form,
-.flex-container .info-box {
-  width: 100%;
-  margin: 8px 0;
+#team-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#team-container .team-member {
+  max-width: 500px;
+  margin: 16px;
+}
+
+#team-container .team-member img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+#team-container .team-member p {
+  text-align: justify;
+}
+
+section:not(:first-of-type) {
+  padding: 32px 8px;
+}
+
+.form-container {
+  background: #2a9742;
+  color: white;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 768px;
 }
 
 form .form-group {
@@ -21,16 +51,5 @@ form label {
 
 h2 {
   margin-bottom: 16px;
-}
-
-.flex-container .info-box img {
-  max-width: 100%;
-}
-
-@media (min-width: 768px) {
-  .flex-container form,
-  .flex-container .info-box {
-    width: 50%;
-    margin: 0 16px 0 0 !important;
-  }
+  text-align: center;
 }
