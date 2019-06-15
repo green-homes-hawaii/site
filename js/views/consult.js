@@ -70,7 +70,11 @@ function handleForm(e) {
       member.title +
       "</h4><p>" +
       member.description +
-      "</p><div class='button-container'></div></div>"; // add PHONE, EMAIL button
+      "</p><div class='button-container'><a class='btn btn-primary' href='mailto:" +
+      member.email +
+      "?subject=Inquiry from Green Homes Hawaii Website'>Email Me</a><a class='btn btn-secondary' href='tel:" +
+      member.phone +
+      "'>Call Me</a></div></div>"; // add PHONE, EMAIL button
   });
 
   teamContainer.innerHTML += inner;

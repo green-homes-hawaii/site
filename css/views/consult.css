@@ -11,11 +11,11 @@
 
 #team-container .team-member {
   max-width: 500px;
-  margin: 16px;
+  margin: 24px;
 }
 
 #team-container .team-member img {
-  width: 200px;
+  width: 250px;
   border-radius: 50%;
   margin-bottom: 16px;
 }
@@ -50,6 +50,6 @@ form label {
 }
 
 h2 {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   text-align: center;
 }
