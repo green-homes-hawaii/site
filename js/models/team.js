@@ -14,9 +14,9 @@ function getTeam() {
       id: 2,
       img: getProjectRoot() + "/static/team/daniel.jpeg",
       name: "Daniel Loli Batallani",
-      title: "Realtor Associate RS-81949",
+      title: "Real Estate Agent",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lectus. Curabitur rutrum lacus vel purus blandit, nec auctor tortor congue. Donec feugiat vulputate enim. Nullam auctor dolor ut velit imperdiet, ac auctor diam venenatis. Cras mi odio, porttitor vel luctus quis, bibendum sit amet elit. Phasellus id laoreet nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In fringilla massa luctus, pellentesque est eu, luctus lectus. Quisque pretium magna ut lectus auctor, scelerisque molestie augue gravida. Aenean non lorem id ligula facilisis blandit. Quisque magna dui, fringilla sed consectetur ac, fringilla quis arcu. Proin eget interdum nibh. Nulla et quam nisi.",
+        "Daniel is a Marine Corps Veteran who has converted his communication skills, leadership and attention to detail into a career in real estate. Whether it is his time in the Marine Corps, volunteering or finding people their dream property, Daniel’s drive to help people can be found in everything he does. His integrity and commitment to perfection, will ensure that you not only get an honest opinion, but that the job is done right every time. He knows the magnitude of finding a new property, so he ensures that the grunt work is done right so you can have a smooth transaction and focus on the details that matter most. Daniel has honorably served our country and now he looks forward to serving you!",
       phone: "+18087835497",
       email: "daniel.lolibatallani@cbpacific.com",
     },
