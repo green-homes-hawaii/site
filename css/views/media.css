@@ -1,3 +1,7 @@
+#media-container {
+  align-items: flex-start;
+}
+
 .media-item img {
   max-height: 200px;
 }

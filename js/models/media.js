@@ -16,7 +16,7 @@ function getMedia() {
       },
     },
     {
-      id: 1,
+      id: 2,
       type: "article",
       media: {
         src: root + "/static/media-img/changing_paradise.jpg",
@@ -29,6 +29,22 @@ function getMedia() {
         href:
           "https://sites.sandiego.edu/usd-magazine/2018/01/changing-paradise",
         text: "Read the Full Article",
+      },
+    },
+    {
+      id: 3,
+      type: "article",
+      media: {
+        src: root + "/static/home-images/community.jpg",
+        alt: "Overview draft of Communities at Laulaulei",
+      },
+      title: "Honolulu Star: Early Days of Green Homes at Laulaulei",
+      description:
+        "'It has been rough' said R.J. Martin, a 34-year old history lecturer who has been working on the project caled Green Homes at Laulaulei for several years and has encountered financial difficulties that threaten his dream of providing the 25 homes for moderate-income families.",
+      link: {
+        href:
+          "https://drive.google.com/file/d/0B8BYLcIsfATqc0N1UDVmRmx4RzBYY19KRjVWWGxjcjFPeU5J/view?usp=sharing",
+        text: "View the Newspaper Clipping",
       },
     },
   ];

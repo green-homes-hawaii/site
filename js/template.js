@@ -3,7 +3,7 @@
 		{ href: './index.html', text: 'Home' },
 		{ href: './pages/buy.html', text: 'Buy' },
 		{ href: './pages/rent.html', text: 'Rent' },
-		{ href: './pages/consult.html', text: 'Get In Touch' },
+		{ href: './pages/consult.html', text: 'Meet the Team' },
 	];
 
 	document.getElementById('header-links').innerHTML =
