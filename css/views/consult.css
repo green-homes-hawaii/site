@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+#team .subline {
+  width: 768px;
+  margin: 0 auto 24px auto;
+}
+
 #team-container {
   display: flex;
   align-items: flex-start;
