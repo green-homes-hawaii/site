@@ -133,7 +133,7 @@ function getProperties(type) {
       ],
       description:
         "Dreaming of sunsets from your lanai or swimming with dolphins? Swim, surf, SUP, paddle, fish, all are steps away when you live on Pokai Bay. Jump in the water for a surf while your kids are swimming near the lifeguard stand. Enjoy this large custom home featuring 5 large bedrooms, 3 full baths + 1/2 bath in addition to a second large living room with wet bar. The 2 master suites make hosting family and guests seamless. Want to combat global warming? This smart home is solar powered, with a 10KW system, 2 Tesla Power walls and full Smart Home Automation!!! Must see and feel the quality and location.",
-      price: "$1.195M",
+      price: "$900K",
       location: "85-065 Waianae Valley Road",
       footnote: "",
       features: [],
@@ -239,7 +239,7 @@ function getProperties(type) {
   ];
 
   if (this.type) {
-    return properties.filter(function(property) {
+    return properties.filter(function (property) {
       return property.type === this.type;
     });
   } else return properties;
@@ -247,7 +247,7 @@ function getProperties(type) {
 
 function getProperty(id) {
   var properties = getProperties();
-  return properties.filter(function(property) {
+  return properties.filter(function (property) {
     return property.id === id;
   })[0];
 }

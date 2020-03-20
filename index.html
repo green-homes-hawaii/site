@@ -1,230 +1,153 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>GREEN HOMES HAWAII</title>
 
-    <meta charset=”utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./static/brand/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./static/brand/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./static/brand/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./static/brand/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="./static/brand/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="./static/brand/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="./static/brand/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="./static/brand/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./static/brand/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="./static/brand/android-icon-192x192.png"
-    />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico" />
-    <link rel="icon" type="image/png" sizes="96x96" href="./favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
+<head>
+  <title>GREEN HOMES HAWAII</title>
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
-      integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/shared.css" />
-    <link rel="stylesheet" href="./css/views/index.css" />
-    <link rel="stylesheet" href="./css/animate.css" />
-  </head>
+  <meta charset=”utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="57x57" href="./static/brand/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./static/brand/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./static/brand/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./static/brand/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./static/brand/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./static/brand/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./static/brand/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./static/brand/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/brand/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./static/brand/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
 
-  <body>
-    <div id="modal"></div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+    integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/shared.css" />
+  <link rel="stylesheet" href="./css/views/index.css" />
+  <link rel="stylesheet" href="./css/animate.css" />
+</head>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img class="logo" src="./static/logo.png" />
-        </a>
+<body>
+  <div id="modal"></div>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#header-links"
-          aria-controls="header-links"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="./static/logo.png" />
+      </a>
 
-        <div class="collapse navbar-collapse link-container" id="header-links">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html"
-                ><i class="fas fa-home"></i>
-                <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/buy.html">Buy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/rent.html">Rent</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/consult.html">Meet the Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/media.html">Media</a>
-            </li>
-          </ul>
-        </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-links"
+        aria-controls="header-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse link-container" id="header-links">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html"><i class="fas fa-home"></i>
+              <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/buy.html">Buy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/rent.html">Rent</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/consult.html">Meet the Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/media.html">Media</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="container-fluid">
-      <div class="flex-item solar-bg featured">
-        <span>5 Sold, 2 Left!</span>
-        <div class="inner">
-          <h2 class="hook">Green Homes - Hanalei St.</h2>
-          <p class="line">
-            Energy Efficient Model at $599,950!
-          </p>
-          <div class="button-container">
-            <button onclick="showPropertyModal(2)" class="btn btn-success">
-              Available Now
-            </button>
-            <a
-              href="https://player.vimeo.com/video/336921456"
-              target="_blank"
-              class="btn btn-secondary"
-            >
-              Video Tour
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="flex-item ocean-bg">
-        <div class="inner">
-          <h2 class="hook">Ocean Front Homes</h2>
-          <p class="line">
-            Your Dream life...
-          </p>
-          <button onclick="showPropertyModal(3)" class="btn btn-success">
-            1 Available Now
+  <div class="container-fluid">
+    <div class="flex-item solar-bg completed">
+      <span>Sold Out!</span>
+      <div class="inner">
+        <h2 class="hook">Green Homes - Hanalei St.</h2>
+        <p class="line">
+          Energy Efficient Model at $599,950!
+        </p>
+        <div class="button-container">
+          <button disabled onclick="showPropertyModal(2)" class="btn btn-success">
+            Available Now
           </button>
-        </div>
-      </div>
-      <div class="flex-item green-bg completed">
-        <span>Sold Out!</span>
-        <div class="inner">
-          <h2 class="hook">Green Homes at Laulaulei</h2>
-          <p class="line">
-            25 Home Community
-          </p>
-          <a
-            href="https://www.youtube.com/watch?v=d5ba0528OI0"
-            class="btn btn-success"
-            target="_blank"
-          >
+          <a href="https://player.vimeo.com/video/336921456" target="_blank" class="btn btn-secondary">
             Video Tour
-          </a>
-          <a
-            href="https://drive.google.com/file/d/0B8BYLcIsfATqak15SllXM3RUaU0/view?usp=sharing"
-            target="_blank"
-            class="btn btn-secondary"
-            >Overview</a
-          >
-        </div>
-      </div>
-      <div class="flex-item community-bg">
-        <div class="inner">
-          <h2 class="hook">Future Communities...</h2>
-          <p class="line">
-            On the frontlines of Wellness Lifestyle Real Estate.
-          </p>
-          <a
-            href="https://globalwellnessinstitute.org/industry-research/wellness-real-estate-communities-research/"
-            target="_blank"
-            class="btn btn-success"
-          >
-            Explore
           </a>
         </div>
       </div>
     </div>
-
-    <footer>
-      <div class="container">
-        <div>© 2019 Green Homes Hawai'i, Inc.</div>
-        <a href="#">Back to top</a>
+    <div class="flex-item ocean-bg">
+      <div class="inner">
+        <h2 class="hook">Ocean Front Homes</h2>
+        <p class="line">
+          Your Dream life...
+        </p>
+        <button onclick="showPropertyModal(3)" class="btn btn-success">
+          1 Available Now
+        </button>
       </div>
-    </footer>
+    </div>
+    <div class="flex-item green-bg completed">
+      <span>Sold Out!</span>
+      <div class="inner">
+        <h2 class="hook">Green Homes at Laulaulei</h2>
+        <p class="line">
+          25 Home Community
+        </p>
+        <a href="https://www.youtube.com/watch?v=d5ba0528OI0" class="btn btn-success" target="_blank">
+          Video Tour
+        </a>
+        <a href="https://drive.google.com/file/d/0B8BYLcIsfATqak15SllXM3RUaU0/view?usp=sharing" target="_blank"
+          class="btn btn-secondary">Overview</a>
+      </div>
+    </div>
+    <div class="flex-item community-bg">
+      <div class="inner">
+        <h2 class="hook">Future Communities...</h2>
+        <p class="line">
+          On the frontlines of Wellness Lifestyle Real Estate.
+        </p>
+        <a href="https://globalwellnessinstitute.org/industry-research/wellness-real-estate-communities-research/"
+          target="_blank" class="btn btn-success">
+          Explore
+        </a>
+      </div>
+    </div>
+  </div>
 
-    <script src="./js/models/upgrades.js"></script>
-    <script src="./js/models/properties.js"></script>
-    <script src="./js/views/shared.js"></script>
-    <script src="./js/views/property.js"></script>
+  <footer>
+    <div class="container">
+      <div>© 2019 Green Homes Hawai'i, Inc.</div>
+      <a href="#">Back to top</a>
+    </div>
+  </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="./js/models/upgrades.js"></script>
+  <script src="./js/models/properties.js"></script>
+  <script src="./js/views/shared.js"></script>
+  <script src="./js/views/property.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
